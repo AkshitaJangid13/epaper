@@ -1,0 +1,143 @@
+CRITICAL - 2023-07-05 00:37:07 --> Undefined variable $user
+in APPPATH/Views/themes/magazine/post/post.php on line 41.
+ 1 APPPATH/Views/themes/magazine/post/post.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home4/kingcart/epapermedia.in/app/Views/themes/magazine/post/post.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Common.php(91): view()
+ 6 APPPATH/Controllers/HomeController.php(182): loadView()
+ 7 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 00:47:09 --> Class "App\Controllers\UserModel" not found
+in APPPATH/Controllers/HomeController.php on line 136.
+ 1 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 00:47:50 --> Class "App\Controllers\UserModel" not found
+in APPPATH/Controllers/HomeController.php on line 136.
+ 1 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 00:48:30 --> Class "App\Models\UserModel" not found
+in APPPATH/Controllers/HomeController.php on line 137.
+ 1 APPPATH/Controllers/HomeController.php(107): App\Controllers\HomeController->post()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 00:51:01 --> Call to undefined method App\Models\AuthModel::getUserById
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/HomeController.php(136): CodeIgniter\Model->__call()
+ 2 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 00:51:50 --> Call to undefined method App\Models\AuthModel::findUserById
+in SYSTEMPATH/Model.php on line 838.
+ 1 APPPATH/Controllers/HomeController.php(136): CodeIgniter\Model->__call()
+ 2 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 00:56:53 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/HomeController.php on line 137.
+ 1 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 00:58:07 --> Undefined variable $user
+in APPPATH/Controllers/HomeController.php on line 139.
+ 1 APPPATH/Controllers/HomeController.php(139): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 00:58:22 --> Undefined variable $postUser
+in APPPATH/Views/themes/magazine/post/post.php on line 51.
+ 1 APPPATH/Views/themes/magazine/post/post.php(51): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home4/kingcart/epapermedia.in/app/Views/themes/magazine/post/post.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Common.php(91): view()
+ 6 APPPATH/Controllers/HomeController.php(185): loadView()
+ 7 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 00:58:56 --> Undefined variable $postUser
+in APPPATH/Views/themes/magazine/post/post.php on line 51.
+ 1 APPPATH/Views/themes/magazine/post/post.php(51): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home4/kingcart/epapermedia.in/app/Views/themes/magazine/post/post.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Common.php(91): view()
+ 6 APPPATH/Controllers/HomeController.php(185): loadView()
+ 7 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 00:59:13 --> Undefined variable $postUser
+in APPPATH/Views/themes/magazine/post/post.php on line 51.
+ 1 APPPATH/Views/themes/magazine/post/post.php(51): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home4/kingcart/epapermedia.in/app/Views/themes/magazine/post/post.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Common.php(91): view()
+ 6 APPPATH/Controllers/HomeController.php(185): loadView()
+ 7 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 01:00:53 --> Undefined variable $postUser
+in APPPATH/Views/themes/magazine/post/post.php on line 51.
+ 1 APPPATH/Views/themes/magazine/post/post.php(51): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home4/kingcart/epapermedia.in/app/Views/themes/magazine/post/post.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Common.php(91): view()
+ 6 APPPATH/Controllers/HomeController.php(185): loadView()
+ 7 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 01:02:24 --> Undefined variable $postUser
+in APPPATH/Views/themes/magazine/post/post.php on line 51.
+ 1 APPPATH/Views/themes/magazine/post/post.php(51): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home4/kingcart/epapermedia.in/app/Views/themes/magazine/post/post.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Common.php(91): view()
+ 6 APPPATH/Controllers/HomeController.php(185): loadView()
+ 7 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-05 01:02:38 --> Undefined variable $postUser
+in APPPATH/Views/themes/magazine/post/post.php on line 51.
+ 1 APPPATH/Views/themes/magazine/post/post.php(51): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/home4/kingcart/epapermedia.in/app/Views/themes/magazine/post/post.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Common.php(91): view()
+ 6 APPPATH/Controllers/HomeController.php(185): loadView()
+ 7 APPPATH/Controllers/HomeController.php(106): App\Controllers\HomeController->post()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->any()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()

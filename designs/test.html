@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .photo-div {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .photo-div img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    #file-input {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="photo-div" onclick="openPhotoChooser()">
+    <img id="preview-image" src="#" alt="Selected photo">
+  </div>
+
+  <input type="file" id="file-input" accept="image/*" onchange="previewPhoto(event)">
+
+  <script>
+    function openPhotoChooser() {
+      document.getElementById('file-input').click();
+    }
+
+    function previewPhoto(event) {
+      var input = event.target;
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          document.getElementById('preview-image').src = e.target.result;
+        };
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+  </script>
+</body>
+</html>

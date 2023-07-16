@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body style="background-color: rgb(215 215 116 / 34%);">
+<div >
+    <section id="main_section">
+        <div class="container">
+            <div class="row py-4" >
+                <div class="col-md-12 col-sm-12">
+                    <div id="paper-design">
+                        <div class="container ">
+                            <div class="row px-0" id="header-paper">
+                                <div class="col-12 header-paper px-0"  id="header-paper1">
+                                    <div class="photo-div" >
+                                        <label for="file-input1" id="label1" class="btn btn-primary">Choose Photo</label>
+                                        
+                                        <img id="preview-image1" src="" alt="News header Image">
+                                    </div>
+                                    <input id="file-input1" type="file" style="display: none;" onchange="previewPhoto('file-input1', 'preview-image1', 'label1')">
+                                </div>
+
+                                <div class="col-12 header-paper" id="header-paper2">
+                                    <div class=" row align-items-center">
+                                        <div class="col-3 px-0" >
+                                            <div class="photo-div" >
+                                                <label for="file-input2" id="label2" class="btn btn-primary">Choose Photo</label>
+                                                
+                                                <img id="preview-image2" src="" alt="Advertisment Here">
+                                            </div>
+                                            <input id="file-input2" type="file" style="display: none;" onchange="previewPhoto('file-input2', 'preview-image2', 'label2')">
+                                        </div>
+                                        <div class="col-6 px-0">
+                                            <div class="photo-div" >
+                                                <label for="file-input3" id="label3" class="btn btn-primary">Choose Photo</label>
+                                                <img id="preview-image3" src= "" alt="News header Image">
+                                            </div>
+                                            <input id="file-input3" type="file" style="display: none;" onchange="previewPhoto('file-input3', 'preview-image3', 'label3')">
+                                        </div>
+                                        <div class="col-3 px-0" >
+                                            <div class="photo-div" >
+                                                <label for="file-input4" id="label4" class="btn btn-primary">Choose Photo</label>
+                                                <img id="preview-image4" src="" alt="Advertisment Here">
+                                            </div>
+                                            <input id="file-input4" type="file" style="display: none;"  onchange="previewPhoto('file-input4', 'preview-image4', 'label4')">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 header-paper" id="header-paper3">
+                                    <div class=" row align-items-center">
+                                        <div class="col-8 px-0">
+                                            <div class="photo-div" >
+                                                <label for="file-input5" id="label5" class="btn btn-primary">Choose Photo</label>
+                                                <img id="preview-image5" src= "" alt="News header Image">
+                                            </div>
+                                            <input id="file-input5" type="file" style="display: none;" onchange="previewPhoto('file-input5', 'preview-image5', 'label5')">
+                                        </div>
+                                        <div class="col-4 px-0" >
+                                            <div class="photo-div" >
+                                                <label for="file-input6" id="label6" class="btn btn-primary">Choose Photo</label>
+                                                <img id="preview-image6" src="" alt="Advertisment Here">
+                                            </div>
+                                            <input id="file-input6" type="file" style="display: none;"  onchange="previewPhoto('file-input6', 'preview-image6', 'label6 ')">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 header-paper" id="header-paper4">
+                                    <div class=" my-2 row align-items-center justify-content-center">
+                                        <div class="col-11">
+                                            <h4 class="text-center"><input type="text" placeholder="Channel Name"></h4>
+                                            <p class="text-center"><input type="text" placeholder="indragadh>gwalior>bhind>morena"></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 header-paper" id="header-paper5">
+                                    <div class="row align-items-center">   
+                                        <div class="col-3 p-0">
+                                            <div class="photo-div" >
+                                                <label for="file-input7" id="label7" class="btn btn-primary">Choose Photo</label>
+                                                <img id="preview-image7" src="" alt="Advertisment Here">
+                                            </div>
+                                            <input id="file-input7" type="file" style="display: none;" onchange="previewPhoto('file-input7', 'preview-image7', 'label7')">
+                                        </div>
+                                        <div class="col-6 ">
+                                            <h4 class="text-center"><input type="text" placeholder="Channel Name"></h4>
+                                            <p class="text-center"><input type="text" placeholder="indragadh>gwalior>bhind>morena"></p>
+                                        </div>
+                                        <div class="col-3 card my-1">
+                                            <div class="row align-items-center">
+                                                <div class="col-8">
+                                                    <h5><strong>सुविचार</strong></h5>
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="assets/lady.png" class="card-img-top" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col p-0">
+                                                    <p class="" id="textarea">
+                                                        <textarea name="suvichar" id="suvichar1" cols="18" rows="5" wrap="hard" maxlength="110"
+                                                        placeholder="सोच का ही फ़र्क होता है,वरना समस्याएं आपको कमजोर नही बल्कि मज़बूत बनाने आती हैं…"
+                                                        ></textarea>
+                                                        </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 header-paper" id="header-paper6">
+                                    <div class="row align-items-center">   
+                                        <div class="col-3 p-0">
+                                            <div class="photo-div" >
+                                                <label for="file-input8" id="label8" class="btn btn-primary">Choose Photo</label>
+                                                <img id="preview-image8" src="" alt="Advertisment Here">
+                                            </div>
+                                            <input id="file-input8" type="file" style="display: none;" onchange="previewPhoto('file-input8', 'preview-image8', 'label8')">
+                                        </div>
+                                        <div class="col-6 ">
+                                            <h4 class="text-center"><input type="text" placeholder="Channel Name"></h4>
+                                            <p class="text-center"><input type="text" placeholder="indragadh>gwalior>bhind>morena"></p>
+                                        </div>
+                                        <div class="col-3 card my-1 py-1" id="quoteCol">
+                                            <h5><strong>सुविचार</strong></h5>
+                                            <p class="" id="textarea">
+                                                <textarea name="suvichar" id="suvichar1" cols="18" rows="5" wrap="hard" maxlength="110"
+                                                placeholder="सोच का ही फ़र्क होता है,वरना समस्याएं आपको कमजोर नही बल्कि मज़बूत बनाने आती हैं…"
+                                                ></textarea>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 header-paper" id="header-paper7">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 mb-1" id="quoteCol2">
+                                            <p class="p-1 mb-0 "><input type="text" class="text-light"  maxlength="70" placeholder="सोच का ही फ़र्क होता है,वरना समस्याएं आपको कमजोर नही बल्कि मज़बूत बनाने आती हैं…"></p>
+                                        </div>
+                                        <div class="col-7 ">
+                                            <h4 class="text-center"><input type="text" placeholder="Channel Name"></h4>
+                                            <p class="text-center"><input type="text" placeholder="indragadh>gwalior>bhind>morena"></p>
+                                        </div>
+                                        <div class="col-5 card my-1">
+                                            <div class="row align-items-center">
+                                                <div class="col-8">
+                                                    <h5><strong>सुविचार</strong></h5>
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="assets/lady.png" class="card-img-top" alt="" style="width: 50%;">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col p-0">
+                                                    <p class="" id="textarea">
+                                                        <textarea name="suvichar" id="suvichar1" cols="18" rows="3" wrap="hard" maxlength="110"
+                                                        placeholder="सोच का ही फ़र्क होता है,वरना समस्याएं आपको कमजोर नही बल्कि मज़बूत बनाने आती हैं…"
+                                                        ></textarea>
+                                                        </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 header-paper" id="header-paper8">
+                                    <div class="row align-items-center">
+                                        <div class="col-3">
+                                            <div class="row" id="page_num">
+                                                <div class="col-12 d-flex">
+                                                    Page&nbsp;no.<input type="number" placeholder="1" maxlength="3">
+                                                </div>
+                                                <div class="col-12 d-flex">
+                                                    <input type="text" placeholder="Thursday"><br>
+                                                </div>
+                                                <div class="col-12 d-flex">
+                                                    Price:-<input type="text" placeholder=" 02/-" maxlength="5">
+                                                </div>
+                                                <div class="col-12 d-flex">
+                                                    <input type="text" placeholder="29th june 2023">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 ">
+                                            <h4 class="text-center"><input type="text" placeholder="Channel Name"></h4>
+                                            <p class="text-center"><input type="text" placeholder="indragadh>gwalior>bhind>morena" maxlength="30"></p>
+                                        </div>
+                                        <div class="col-4 card my-1">
+                                            <h5 class="text-center"><strong>सुविचार</strong></h5>
+                                            <p class="" id="textarea">
+                                                <textarea name="suvichar" id="suvichar1" cols="18" rows="5" wrap="hard" maxlength="110"
+                                                placeholder="सोच का ही फ़र्क होता है,वरना समस्याएं आपको कमजोर नही बल्कि मज़बूत बनाने आती हैं…"
+                                                ></textarea>
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 header-paper" id="header-paper9">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 mb-1 bg-black text-light" >
+                                            <p class="p-1 mb-0 "><input type="text" class="text-light"  maxlength="70" placeholder="सोच का ही फ़र्क होता है,वरना समस्याएं आपको कमजोर नही बल्कि मज़बूत बनाने आती हैं…"></p>
+                                        </div>
+                                        <div class="col-2 p-0">
+                                            <div class="photo-div" >
+                                                <label for="file-input9" id="label9" class="btn btn-primary">Choose Photo</label>
+                                                <img id="preview-image9" src="" alt="LOGO">
+                                            </div>
+                                            <input id="file-input9" type="file" style="display: none;" onchange="previewPhoto('file-input9', 'preview-image9', 'label9')">
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 class="text-center"><input type="text" placeholder="Channel Name"></h4>
+                                            <p class="text-center"><input type="text" placeholder="indragadh>gwalior>bhind>morena"></p>
+                                        </div>
+                                        <div class="col-2 p-0">
+                                            <div class="photo-div" >
+                                                <label for="file-input10" id="label10" class="btn btn-primary">Choose Photo</label>
+                                                <img id="preview-image10" src="" alt="Advertisment">
+                                            </div>
+                                            <input id="file-input10" type="file" style="display: none;" onchange="previewPhoto('file-input10', 'preview-image10', 'label10')">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col"><input type="text" placeholder="email-:abc@gmail.com"></div>
+                                                <div class="col "><p class="text-center mb-0"><input type="text" placeholder="RNI-XXXXXXXXXXX"></p></div>
+                                                <div class="col"><p class="text-end mb-0"><input type="text" placeholder="www.website.com"></p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 header-paper" id="header-paper10">
+                                    <div class="row align-items-center ">
+                                        <div class="col-3 card my-1">
+                                            <h5 class="text-center"><strong>सुविचार</strong></h5>
+                                            <p class="" id="textarea">
+                                                <textarea name="suvichar" id="suvichar1" cols="18" rows="5" wrap="hard" maxlength="90"
+                                                placeholder="सोच का ही फ़र्क होता है,वरना समस्याएं आपको कमजोर नही बल्कि मज़बूत बनाने आती हैं…"
+                                                ></textarea>
+                                                </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h2 class="text-center py-3"><h4 class="text-center"><input type="text" placeholder="Channel Name"></h4></h2>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-baseline mt-4">
+                                                <div class="col-12">
+                                                    <p class="text-center mb-0 bg-dark text-light "><input class="text-light" type="text" maxlength="30" placeholder="अखंड भारत की बुलंद  आवाज़"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 card my-1">
+                                            <h5 class="text-center"><strong>सुविचार</strong></h5>
+                                            <p class="" id="textarea">
+                                                <textarea name="suvichar" id="suvichar1" cols="18" rows="5" wrap="hard" maxlength="90"
+                                                placeholder="सोच का ही फ़र्क होता है,वरना समस्याएं आपको कमजोर नही बल्कि मज़बूत बनाने आती हैं…"
+                                                ></textarea>
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 header-paper" id="">
+                                    <div class="row  align-items-center">
+                                        <div class="col-3 p-0">
+                                            <div class="photo-div" >
+                                                <lheader-paper11abel for="file-input11" id="label11" class="btn btn-primary">Choose Photo</label>
+                                                <img id="preview-image11" src="" alt="Advertisment">
+                                            </div>
+                                            <input id="file-input11" type="file" style="display: none;" onchange="previewPhoto('file-input11', 'preview-image11', 'label11')">
+                                        </div>
+                                        <div class="col-6">
+                                                <div class="col-12">
+                                                    <h2 class="text-center "><h4 class="text-center"><input type="text" placeholder="Channel Name"></h4></h2>
+                                                </div>
+                                            <div class="row align-items-baseline mt-3">
+                                                <div class="col-12">
+                                                    <p class="text-center mb-0 bg-dark text-light "><input class="text-light" type="text" maxlength="30" placeholder="अखंड भारत की बुलंद  आवाज़"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 card my-1 border-0">
+                                            <h5 class="text-center"><strong>सुविचार</strong></h5>
+                                            <p class="" id="textarea">
+                                                <textarea name="suvichar" id="suvichar1" cols="18" rows="5" wrap="hard" maxlength="90"
+                                                placeholder="सोच का ही फ़र्क होता है,वरना समस्याएं आपको कमजोर नही बल्कि मज़बूत बनाने आती हैं…"
+                                                ></textarea>
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 header-paper" id="header-paper12">
+                                    <div class="row  align-items-center">
+                                        <div class="col-3 p-0">
+                                            <div class="photo-div" >
+                                                <label for="file-input13" id="label13" class="btn btn-primary">Choose Photo</label>
+                                                <img id="preview-image13" src="" alt="Advertisment">
+                                            </div>
+                                            <input id="file-input13" type="file" style="display: none;" onchange="previewPhoto('file-input13', 'preview-image13', 'label13')">
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="col-12">
+                                                <p class="text-center mb-0 "><input type="text" maxlength="30" placeholder="अखंड भारत की बुलंद  आवाज़"></p>
+                                            </div>
+                                            <div class="col-12">
+                                                <h2 class="text-center "><h4 class="text-center"><input type="text" placeholder="Channel Name"></h4></h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 card my-1 border-0">
+                                            <h5 class="text-center"><strong>सुविचार</strong></h5>
+                                            <p class="" id="textarea">
+                                                <textarea name="suvichar" id="suvichar1" cols="18" rows="5" wrap="hard" maxlength="90"
+                                                placeholder="सोच का ही फ़र्क होता है,वरना समस्याएं आपको कमजोर नही बल्कि मज़बूत बनाने आती हैं…"
+                                                ></textarea>
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" id="secondheaderpaper">
+                                <div class="col-12 secondheaderCol" id="secondheader-paper1">
+                                    <div class="row align-items-center p-1">
+                                        <div class="col-1  p-0 d-flex justify-content-start">
+                                            <h4><strong><input type="text" placeholder="01" maxlength="3"></strong></h4>
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="d-flex justify-content-start"><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"><span><strong><input type="text" name="" id="" placeholder="संपादकीय" maxlength="20"> </strong></span></h6>
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="d-flex justify-content-end"><input type="text" class="text-end" placeholder="Channel name" maxlength="25"> </h6>
+                                        </div>
+                                        <div class="col-12 border border-bottom-3 border-black"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper2">
+                                    <div class="row align-items-center p-1">
+                                        <div class="col-1  p-0 d-flex justify-content-start bg-warning">
+                                            <h4><strong><input type="text" placeholder="01" maxlength="3"></strong></h4>
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="d-flex justify-content-start"><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"><span class="text-warning"><strong> <input type="text" class="text-warning" name="" id="" placeholder="संपादकीय" maxlength="20"></strong></span></h6>
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="d-flex justify-content-end"><input type="text" class="text-end" placeholder="Channel name" maxlength="25"> </h6>
+                                        </div>
+                                        <div class="col-12 border border-bottom-3 border-warning"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper3">
+                                    <div class="row align-items-center p-1" id="purpleNumber">
+                                        <div class="col-11">
+                                            <h6 class="d-flex justify-content-start"><span><strong> <input type="text" name="" id="input1" placeholder="संपादकीय" maxlength="20"></strong></span><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-1  p-0 d-flex justify-content-start" >
+                                            <h4><strong><input type="text" class="text-light" placeholder="01" maxlength="3"></strong></h4>
+                                        </div>
+                                        <div class="col-12 "></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper4">
+                                    <div class="row align-items-center border-black p-1" id="oliveNumber">
+                                        <div class="col-5">
+                                            <h6 class="d-flex justify-content-start"><span><strong> <input type="text" name="" id="input2" placeholder="संपादकीय" maxlength="20"></strong></span><input type="text" class="text-start" placeholder="Channel name" maxlength="25"></h6>
+                                        </div>
+                                        <div class="col-6 p-0 d-flex justify-content-end" >
+                                            <h6><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-1 p-0">
+                                            <h5 class="mb-0"><strong><input type="text" class="text-light" placeholder="01" maxlength="3"></strong></h5>
+                                        </div>
+                                        <div class="col-12 p-0"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper5">
+                                    <div class="row align-items-center p-1" >
+                                        <div class="col-12">
+                                            <div class="row border border-3 border-info pb-0 align-items-center">
+                                                <div class="col-6">
+                                                    <h6 class="d-flex justify-content-start align-items-center"><span class=" text-info d-flex align-items-center"><input type="text" name="" id="" class="text-info" placeholder="संपादकीय" maxlength="20">&nbsp;</span><input type="text" class="text-start" placeholder="Channel name" maxlength="25"> </h6>
+                                                </div>
+                                                <div class="col-5 p-0 d-flex justify-content-end align-items-center" >
+                                                    <h6><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                                </div>
+                                                <div class="col-1 d-flex justify-content-end p-0">
+                                                    <h4 class="bg-info py-2 text-light mb-0"><strong><input type="text" class="text-light" placeholder="01" maxlength="3"></strong></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper6">
+                                    <div class="row align-items-center p-1" >
+                                        <div class="col-12">
+                                            <div class="row border border-3 border-danger pb-0 align-items-center">
+                                                <div class="col-6">
+                                                    <h6 class="d-flex justify-content-start align-items-center"><span class=" text-info d-flex align-items-center"><input type="text" name="" id="" class="text-info" placeholder="संपादकीय" maxlength="20">&nbsp;</span><input type="text" class="text-start" placeholder="Channel name" maxlength="25"> </h6>
+                                                </div>
+                                                <div class="col-5 p-0 d-flex justify-content-end align-items-center" >
+                                                    <h6><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                                </div>
+                                                <div class="col-1 p-0">
+                                                    <h4 class="bg-danger py-2 text-light mb-0"><input type="text" class="text-light" placeholder="01" maxlength="3"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper7">
+                                    <div class="row align-items-center p-1" >
+                                        <div class="col-12">
+                                            <div class="row border border-3 border-danger pb-0 align-items-center">
+                                                <div class="col-1 p-0">
+                                                    <h4 class="bg-danger py-2 text-light mb-0"><input type="text" class="text-light" placeholder="01" maxlength="3"></h4>
+                                                </div>
+                                                <div class="col-7 p-0 d-flex align-items-center" >
+                                                    <input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30">
+                                                    <input type="text" name="" id="" class="text-danger" placeholder="संपादकीय" maxlength="20">
+                                                </div>
+                                                <div class="col-4">
+                                                    <h6 class="d-flex justify-content-end mb-0"><input type="text" class="text-start" placeholder="Channel name" maxlength="25"> </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper8">
+                                    <div class=" m-1 border border-3 row align-items-center border-black " >
+                                        <div class="col-1  p-0 d-flex justify-content-start">
+                                            <h4><strong><input type="text" placeholder="01" maxlength="3"></strong></h4>
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="d-flex justify-content-start"><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"><span><strong><input type="text" name="" id="" placeholder="संपादकीय" maxlength="20"> </strong></span></h6>
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="d-flex justify-content-end"><input type="text" class="text-end" placeholder="Channel name" maxlength="25"> </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper9">
+                                    <div class="p-1 row align-items-center ">
+                                        <div class="col-1 p-0 ps-1 d-flex justify-content-start">
+                                            <h4><input type="text" placeholder="01" maxlength="3"></h4>
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="d-flex justify-content-start"><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"><span><input type="text" name="" id="" placeholder="संपादकीय" maxlength="20"></span></h6>
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="d-flex justify-content-end"><input type="text" class="text-end" placeholder="Channel name" maxlength="25"> </h6>
+                                        </div>
+                                        <div class="col-12 border border-bottom-3 border-black"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper10">
+                                    <div class=" row align-items-center">
+                                        <div class="col-2 d-flex justify-content-start" >
+                                            <h4 class=" mb-0"><input type="text" class="text-light p-2 bg-dark rounded-circle text-center" placeholder="01" maxlength="3"></h4>
+                                        </div>
+                                        <div class="col-6">
+                                            <h6 class="d-flex justify-content-start"><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="d-flex justify-content-end"><input type="text" class="text-end" name="" id="" placeholder="संपादकीय" maxlength="20"></h6>
+                                        </div>
+                                        <div class="col-12 border border-bottom-3 border-black mt-0"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper11">
+                                    <div class="row align-items-center p-1">
+                                        <div class="col-12 border border-3 border-danger">
+                                            <div class="row align-items-center">
+                                                <div class="col-3">
+                                                    <h6 class="d-flex justify-content-start align-items-center"><input type="text" placeholder="Channel name" maxlength="25"> </h6>
+                                                </div>
+                                                <div class="col-4 d-flex">
+                                                    <input type="text" class="text-danger text-center" name="" id="" placeholder="संपादकीय" maxlength="20">
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-end ">
+                                                    <h6 class="mb-0"><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                                </div>
+                                                <div class="col-1 p-0" >
+                                                    <input type="text" class="bg-danger text-light p-1 mb-0 text-center" placeholder="01" maxlength="3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper12">
+                                    <div class="row align-items-center p-1">
+                                        <div class="col-12 border border-3 border-danger">
+                                            <div class="row align-items-center p-0">
+                                                <div class="col-4">
+                                                    <h6><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                                </div>
+                                                <div class="col-4 d-flex bg-danger justify-content-center py-1">
+                                                    <h4><input type="text" class="text-light text-center" name="" id="" placeholder="संपादकीय" maxlength="20"></h4>
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-end ">
+                                                    <h6 class=" border border-2 border-black rounded p-1 m-1"  ><input type="text" placeholder="Channel name" maxlength="25"></h6>
+                                                </div>
+                                                <div class="col-1 d-flex justify-content-start " >
+                                                    <h4 class="bg-danger  p-1 " id="top-number"><input type="text" class="text-light text-center" placeholder="01" maxlength="3"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper13">
+                                    <div class="row align-items-center p-1">
+                                        <div class="col-12 border border-3 border-danger">
+                                            <div class="row align-items-center p-0">
+                                                <div class="col-4">
+                                                    <h6><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-center py-1">
+                                                    <h4 class="text-center   border-bottom border-3 border-danger"><input type="text" class="text-danger text-center" name="" id="" placeholder="संपादकीय" maxlength="20"></h4>
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-end ">
+                                                    <h6 class=" border border-2 border-black rounded p-1 m-1"  ><input type="text" placeholder="Channel name" maxlength="20"></h6>
+                                                </div>
+                                                <div class="col-1 d-flex justify-content-start " >
+                                                    <h4 class="bg-danger  p-1 " id="top-number"><input type="text" class="text-light text-center" placeholder="01" maxlength="3"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 secondheaderCol" id="secondheader-paper14">
+                                    <div class="row align-items-center p-1">
+                                        <div class="col-12">
+                                            <div class="row align-items-center p-0">
+                                                <div class="col-4">
+                                                    <h6><input type="text" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-center py-1">
+                                                    <h4 class="text-center"><input type="text" class="text-danger text-center" name="" id="" placeholder="संपादकीय" maxlength="20"></h4>
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-end ">
+                                                    <h6 class=" border border-2 border-black rounded p-1 m-1"  ><input type="text" placeholder="Channel name" maxlength="20"></h6>
+                                                </div>
+                                                <div class="col-1 d-flex justify-content-start " >
+                                                    <h4 class="bg-danger  p-1 " id="top-number"><input type="text" class="text-light text-center" placeholder="01" maxlength="3"></h4>
+                                                </div>
+                                                <div class="col-12 border-bottom border-3 border-danger"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row" id="Subheader-paper">
+                                <div class="col-12 subheader-paper" id="subheader-paper1">
+                                    <div class="row align-items-center p-1">
+                                        <div class="col-6 bg-primary">
+                                            <h6 class="text-start  mb-0 py-1"><input type="text" class="text-light" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-6 bg-primary">
+                                            <h6 class="text-end text-light mb-0 py-1"><input type="text" class="text-end text-light" placeholder="वर्ष- १, अंक २0 ,पृष्ठ 0२"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 subheader-paper" id="subheader-paper2">
+                                    <div class=" py-0 m-1 border-bottom border-top border-black  row align-items-center p-1">
+                                        <div class="col-3 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-center" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-center" name="" id="" placeholder="वर्ष- १" maxlength="10"></h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-center" name="" id="" placeholder="अंक २0" maxlength="10"></h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-center" name="" id="" placeholder="पृष्ठ 0२" maxlength="10"></h6>
+                                        </div>
+                                        <div class="col-3 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-center" name="" id="" placeholder="abc@gmail.com" maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-3 px-0">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-center" name="" id="" placeholder="wwww.website.com" maxlength="40"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 subheader-paper" id="subheader-paper3">
+                                    <div class="row align-items-center p-1">
+                                        <div class="col-3 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-center" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1 d-flex"><i class="bi bi-circle-fill  ps-1"></i> <input type="text" class="text-center" name="" id="" placeholder="वर्ष- १" maxlength="10"></h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1 d-flex"><i class="bi bi-circle-fill ps-1"></i> <input type="text" class="text-center" name="" id="" placeholder="अंक २0" maxlength="10"></h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1 d-flex"><i class="bi bi-circle-fill ps-1"></i> <input type="text" class="text-center" name="" id="" placeholder="पृष्ठ 0२" maxlength="10"></h6>
+                                        </div>
+                                        <div class="col-3 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1 d-flex"><i class="bi bi-circle-fill ps-1"></i> <input type="text" class="text-center" name="" id="" placeholder="abc@gmail.com" maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-3 px-0">
+                                            <h6 class="mb-0 py-1 d-flex"><i class="bi bi-circle-fill ps-1"></i> <input type="text" class="text-center" name="" id="" placeholder="wwww.website.com" maxlength="40"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 subheader-paper" id="subheader-paper4">
+                                    <div class="row align-items-center p-1">
+                                        <div class="col-4 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-center" name="" id="" placeholder="Sunday 29 june 2023 " maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1 d-flex"><input type="text" class="text-center" name="" id="" placeholder="वर्ष- १" maxlength="10"></h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-center" name="" id="" placeholder="अंक २0" maxlength="10"></h6>
+                                        </div>
+                                        <div class="col-1 px-0 ">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-center" name="" id="" placeholder="पृष्ठ 0२" maxlength="10"></h6>
+                                        </div>
+                                        <div class="col-1 d-flex justify-content-center px-0">
+                                            <div class="photo-div" >
+                                                <label for="file-input14" id="label14" class="btn btn-primary">Photo</label>
+                                                
+                                                <img id="preview-image14" src="" alt="logo">
+                                            </div>
+                                            <input id="file-input14" type="file" style="display: none;" onchange="previewPhoto('file-input14', 'preview-image14', 'label14')">  
+                                        </div>
+                                        <div class="col-4 px-0">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-center" name="" id="" placeholder="wwww.website.com" maxlength="40"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 subheader-paper" id="subheader-paper5">
+                                    <div class="row align-items-center p-1">
+                                        <div class="col-1 d-flex justify-content-center px-0">
+                                            <div class="photo-div" >
+                                                <label for="file-input15" id="label15" class="btn btn-primary">Photo</label>
+                                                
+                                                <img id="preview-image15" src="" alt="logo">
+                                            </div>
+                                            <input id="file-input15" type="file" style="display: none;" onchange="previewPhoto('file-input15', 'preview-image15', 'label15')">  
+                                        </div>
+                                        <div class="col-11 bg-secondary">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-center text-light text-end" name="" id="" placeholder="Sunday 29 june 2023 वर्ष- १,अंक २0, पृष्ठ 0२" maxlength="80"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 subheader-paper" id="subheader-paper6">
+                                    <div class="row align-items-center p-1">
+                                        <div class="col-6 d-flex justify-content-start  bg-secondary">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-start text-light" name="" id="" placeholder="Date- Sunday 29 june 2023" maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-6 d-flex justify-content-end bg-secondary">
+                                            <h6 class="mb-0 py-1"><input type="text" class="text-end text-light" placeholder="वर्ष- १, अंक २0 ,पृष्ठ 0२" maxlength="30"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 subheader-paper" id="subheader-paper7">
+                                    <div class="border border-secondary row align-items-center m-1">
+                                        <div class="col-4 d-flex justify-content-start  ">
+                                            <h6 class="mb-0 py-1 text-start"><input type="text" class="text-start" name="" id="" placeholder="Date- Sunday 29 june 2023" maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-start  ">
+                                            <h6 class="mb-0 py-1 text-center"><input type="text" class="text-center" name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end ">
+                                            <h6 class="mb-0 py-1 text-end"><input type="text" class="text-end" name="" id="" placeholder="www.website.com" maxlength="30"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 subheader-paper" id="subheader-paper8">
+                                    <div class="row align-items-center m-1">
+                                        <div class="col-4 d-flex justify-content-start bg-danger ">
+                                            <h6 class="mb-0 py-1 text-start"><input type="text" class="text-start text-light" name="" id="" placeholder="Date- Sunday 29 june 2023" maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-start   bg-danger">
+                                            <h6 class="mb-0 py-1 text-center"><input type="text" class="text-center text-light" name="" id="" placeholder="RIN:XXXXXXXXXX" maxlength="30"></h6>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end  bg-danger">
+                                            <h6 class="mb-0 py-1 text-end"><input type="text" class="text-end text-light" name="" id="" placeholder="www.website.com" maxlength="30"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-1" id="headerfooter-paper">
+                                <div class="col-12 headerfootercol" id="headerfooter-paper1">
+                                    <div class="row align-items-center border-black">
+                                        <div class="col-2 d-flex px-0 justify-content-end">
+                                            <i class="bi bi-circle-fill" id="bluedot"></i>
+                                            <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                            <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                            <i class="bi bi-circle-fill" ></i>
+                                        </div>
+                                        <div class="col-8 border-bottom border-secondary border-5 px-0"></div>
+                                        <div class="col-2 d-flex px-0">
+                                            <i class="bi bi-circle-fill" id="bluedot"></i>
+                                            <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                            <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                            <i class="bi bi-circle-fill" ></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 headerfootercol" id="headerfooter-paper2">
+                                    <div class="row align-items-center " >
+                                        <div class="col-12">
+                                            <div class="row my-2" id="yellowbg">
+                                                <div class="col-2 d-flex px-0 ">
+                                                    <i class="bi bi-circle-fill" id="bluedot"></i>
+                                                    <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                                    <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                                    <i class="bi bi-circle-fill" ></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 headerfootercol" id="headerfooter-paper3">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12 border-black border " id="smallfooterline">
+                                            <p class="mb-0 p-1">
+                                                <textarea name="" id="" class="mb-0 text-center" cols="30" rows="3" maxlength="250" placeholder="Lorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit aspernatur sint fugiat expedita, molestiae maiores quaerat labore consectetur nobis vel eligendi? Numquam nobis "></textarea>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 headerfootercol" id="headerfooter-paper4">
+                                    <div class="row align-items-center ">
+                                        <div class="col-12">
+                                            <div class="row" id="pinkbg">
+                                                <div class="col-3 d-flex justify-content-start">
+                                                    <i class="bi bi-circle-fill" id="bluedot"></i>
+                                                    <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                                    <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                                    <i class="bi bi-circle-fill" ></i>
+                                                </div>
+                                                <div class="col-3">
+                                                    <i class="bi bi-circle-fill" id="bluedot"></i>
+                                                    <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                                    <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                                    <i class="bi bi-circle-fill" ></i>
+                                                </div>
+                                                <div class="col-3">
+                                                    <i class="bi bi-circle-fill" id="bluedot"></i>
+                                                    <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                                    <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                                    <i class="bi bi-circle-fill" ></i>
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-end">
+                                                    <i class="bi bi-circle-fill" id="bluedot"></i>
+                                                    <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                                    <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                                    <i class="bi bi-circle-fill" ></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 headerfootercol" id="headerfooter-paper5">
+                                    <div class="row align-items-center">
+                                        <div class="col-12">
+                                            <div class="row" id="pinkbg">
+                                                <div class="col-3 d-flex justify-content-start">
+                                                    <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined">crop_16_9</span>
+                                                </div>
+                                                <div class="col-3">
+                                                    <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined">crop_16_9</span>
+                                                </div>
+                                                <div class="col-3">
+                                                    <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined">crop_16_9</span>
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-end">
+                                                    <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined">crop_16_9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 headerfootercol" id="headerfooter-paper6">
+                                    <div class="row align-items-center">
+                                        <div class="col-12">
+                                            <div class="row" id="pinkbg">
+                                                <div class="col-9 ">
+                                                    <p class="mb-0 text-start"><input type="text" placeholder="Channel name"> </p>
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-end">
+                                                    <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined">crop_16_9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="page-feature">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-6 page-number" >
+                    <button class="btn btn-light" ><strong >1</strong></button>
+                    <button class="btn btn-light" ><strong >2</strong></button>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <button class="btn btn-success mx-1"><i class="bi bi-plus-lg"></i> page</button>
+                    <button class="btn btn-primary mx-1"><i class="bi bi-eye-fill"></i></button>
+                    <button class="btn btn-danger mx-1"><i class="bi bi-trash3-fill"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content-functions">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <div class="d-flex  scrollable-row" id="scrollableRow">
+                        <button type="button" class="btn btn-primary mx-1" onclick="showCard(1)">x</button>
+                        <button type="button" class="btn btn-primary mx-1" onclick="showCard(2)">Header & Footer</button>
+                        <button type="button" class="btn btn-primary mx-1" onclick="showCard(3)">Layouts</button>
+                        <button type="button" class="btn btn-primary mx-1" onclick="showCard(4)">Fonts</button>
+                        <button type="button" class="btn btn-primary mx-1" onclick="showCard(5)">Size</button>
+                        <button type="button" class="btn btn-primary mx-1" onclick="showCard(6)">New row</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="card_section1">
+        <div class="container my-2" id="headerandfooter">
+            <div class="row" >
+                <div class="col" >
+                    <div class="card h-100">
+                        <div class="row scrollable-row py-3 " id="scrollableRow" >
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="d-flex scrollable-row" id="scrollableRow">
+                                        <button class="btn btn-light mx-1 " id="headerBtn">Header</button>
+                                        <button class="btn btn-light mx-2 " id="secondheaderBtn">2nd&nbsp;Header</button>
+                                        <button class="btn btn-light mx-2" id="SubheaderBtn">SubHeader</button>
+                                        <button class="btn btn-light mx-1" id="headerfooterBtn">Footer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="card-body" id="header">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center" >
+                                    <button class="btn btn-danger" id="header-remove">Remove</button>
+                                </div>
+                                <div class="col-12 btn" id="header-paper-btn1" onclick="showHeader(1)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary ">
+                                        <div class="col-4 d-flex justify-content-end">
+                                            <h2><i class="bi bi-card-image"></i></h2>
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 class="d-flex justify-content-start">HEADER IMAGE</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn"  id="header-paper-btn2"  onclick="showHeader(2)">
+                                    <div class=" m-1 border border-3 row align-items-center border-black shadow mb-5 bg-body-tertiary ">
+                                        <div class="col-3 " id="adCol">
+                                            <p>Your Advertisment</p>
+                                            <h6 class="text-center">Here</h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <h4 class="text-center">HEADER IMAGE</h4>
+                                        </div>
+                                        <div class="col-3" id="adCol">
+                                            <p>Your Advertisment</p>
+                                            <h6 class="text-center">Here</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="header-paper-btn3"  onclick="showHeader(3)">
+                                    <div class=" m-1 border border-3 row align-items-center border-black shadow mb-5 bg-body-tertiary ">
+                                        <div class="col-7">
+                                            <h4 class="text-center">HEADER IMAGE</h4>
+                                        </div>
+                                        <div class="col-5" id="adCol">
+                                            <p>Your Advertisment</p>
+                                            <h6 class="text-center">Here</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="header-paper-btn4"  onclick="showHeader(4)">
+                                    <div class=" m-1 border border-3 row align-items-center border-black shadow mb-5 bg-body-tertiary ">
+                                        <div class="col-12">
+                                            <h4 class="text-center">Channel Name</h4>
+                                            <p class="text-center">indragadh>gwalior>bhind>morena</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="header-paper-btn5"  onclick="showHeader(5)">
+                                    <div class=" m-1 border border-3 row align-items-center border-black shadow mb-5 bg-body-tertiary p-2">
+                                        <div class="col-3">
+                                            <img src="assets/gandhi.jpg" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="col-5">
+                                            <h4 class="text-center">Channel Name</h4>
+                                            <p class="text-center">indragadh>gwalior>bhind>morena</p>
+                                        </div>
+                                        <div class="col-4 card  py-1">
+                                            <div class="row ">
+                                                <div class="col-8">
+                                                    <h5><strong>सुविचार</strong></h5>
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="assets/lady.png" class="card-img-top" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p>सोच का ही फ़र्क होता है,
+                                                    वरना समस्याएं आपको
+                                                    कमजोर नही बल्कि मज़बूत
+                                                    बनाने आती हैं…</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="header-paper-btn6"  onclick="showHeader(6)">
+                                    <div class=" m-1 border border-3 row align-items-center border-black shadow mb-5 bg-body-tertiary p-2">
+                                        <div class="col-3">
+                                            <img src="assets/temple.jpg" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="col-5">
+                                            <h4 class="text-center">Channel Name</h4>
+                                            <p class="text-center">indragadh>gwalior>bhind>morena</p>
+                                        </div>
+                                        <div class="col-4 card  py-1" id="quoteCol">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h5><strong>सुविचार</strong></h5>
+                                                    <p>सोच का ही फ़र्क होता है,
+                                                    वरना समस्याएं आपको
+                                                    कमजोर नही बल्कि मज़बूत
+                                                    बनाने आती हैं…</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="header-paper-btn7"  onclick="showHeader(7)">
+                                    <div class=" m-1 border border-3 row align-items-center border-black shadow mb-5 bg-body-tertiary p-2">
+                                        <div class="col-12 mb-1" id="quoteCol2">
+                                            <p class="p-1 mb-0">सोच का ही फ़र्क होता है,
+                                                    वरना समस्याएं आपको
+                                                    कमजोर नही बल्कि मज़बूत
+                                                    बनाने आती हैं…</p>
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 class="text-center">Channel Name</h4>
+                                            <p class="text-center">indragadh>gwalior>bhind>morena</p>
+                                        </div>
+                                        <div class="col-4 card  py-1">
+                                            <div class="row ">
+                                                <div class="col-8">
+                                                    <h5><strong>सुविचार</strong></h5>
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="assets/lady.png" class="card-img-top" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p>सोच का ही फ़र्क होता है,
+                                                    वरना समस्याएं आपको
+                                                    कमजोर नही बल्कि मज़बूत
+                                                    बनाने आती हैं…</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="header-paper-btn8"  onclick="showHeader(8)">
+                                    <div class=" m-1 border border-3 row align-items-center border-black shadow mb-5 bg-body-tertiary p-2">
+                                        <div class="col-3">
+                                            <p class="text-start">
+                                                Page no. 1<br>
+                                                Thursday<br>
+                                                Price: 02/-<br>
+                                                29th june 2023
+                                            </p>
+                                        </div>
+                                        <div class="col-5">
+                                            <h4 class="text-center">Channel Name</h4>
+                                            <p class="text-center">indragadh>gwalior>bhind>morena</p>
+                                        </div>
+                                        <div class="col-4 card  py-1" >
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h5><strong>सुविचार</strong></h5>
+                                                    <p>सोच का ही फ़र्क होता है,
+                                                    वरना समस्याएं आपको
+                                                    कमजोर नही बल्कि मज़बूत
+                                                    बनाने आती हैं…</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="header-paper-btn9"  onclick="showHeader(9)">
+                                    <div class=" m-1 border border-3 row align-items-center border-black shadow mb-5 bg-body-tertiary ">
+                                        <div class="col-12 mb-1 bg-dark text-light" >
+                                            <p class="p-1 mb-0">सोच का ही फ़र्क होता है,
+                                                    वरना समस्याएं आपको
+                                                    कमजोर नही बल्कि मज़बूत
+                                                    बनाने आती हैं…</p>
+                                        </div>
+                                        <div class="col-2  bg-light">
+                                            <p>
+                                                Logo Here
+                                            </p>
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 class="text-center">Channel Name</h4>
+                                            <p class="text-center">Indrgadh > gwaliar > bhind</p>
+                                        </div>
+                                        <div class="col-2" id="adCol">
+                                            <p>Your AD</p>
+                                            <h6 class="text-center">Here</h6>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row bg-black text-light">
+                                                <div class="col">email-:abc@gmail.com</div>
+                                                <div class="col "><p class="text-center mb-0">RNI-XXXXXXXXXXX</p></div>
+                                                <div class="col"><p class="text-end mb-0">www.website.com</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="header-paper-btn10"  onclick="showHeader(10)">
+                                    <div class=" m-1 border border-3 row align-items-center border-black shadow mb-5 bg-body-tertiary p-2">
+                                        <div class="col-3 card  py-1">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6><strong>सुविचार</strong></h6>
+                                                    <p class="mb-0">सोच का ही फ़र्क होता है,
+                                                    वरना समस्याएं आपको
+                                                    कमजोर नही बल्कि मज़बूत
+                                                    बनाने आती हैं…</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h2 class="text-center py-3">Channel Name</h2>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-baseline mt-4">
+                                                <div class="col-12">
+                                                    <p class="text-center mb-0 bg-dark text-light ">अखंड भारत की बुलंद  आवाज़</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 card  py-1" >
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6><strong>सुविचार</strong></h6>
+                                                    <p class="mb-0">सोच का ही फ़र्क होता है,
+                                                    वरना समस्याएं आपको
+                                                    कमजोर नही बल्कि मज़बूत
+                                                    बनाने आती हैं…</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="header-paper-btn11"  onclick="showHeader(11)">
+                                    <div class=" m-1 border border-3 row align-items-center border-black shadow mb-5 bg-body-tertiary p-2">
+                                        <div class="col-3">
+                                            <img src="assets/temple.jpg" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h2 class="text-center py-3">Channel Name</h2>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-baseline mt-4">
+                                                <div class="col-12">
+                                                    <p class="text-center mb-0 bg-dark text-light ">अखंड भारत की बुलंद  आवाज़</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3  py-1" >
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6><strong>सुविचार</strong></h6>
+                                                    <p class="mb-0">सोच का ही फ़र्क होता है,
+                                                    वरना समस्याएं आपको
+                                                    कमजोर नही बल्कि मज़बूत
+                                                    बनाने आती हैं…</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="header-paper-btn12"  onclick="showHeader(12)">
+                                    <div class=" m-1 border border-3 row align-items-center border-black shadow mb-5 bg-body-tertiary p-2">
+                                        <div class="col-3">
+                                            <img src="assets/temple.jpg" class="card-img-top" alt="">
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="row">
+                                                <div class="row align-items-baseline mb-1">
+                                                    <div class="col-12">
+                                                        <p class=" mb-0 ">अखंड भारत की बुलंद  आवाज़</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <h2 class="text-center py-2">Channel Name</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4  py-1" >
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6><strong>सुविचार</strong></h6>
+                                                    <p class="mb-0">सोच का ही फ़र्क होता है,
+                                                    वरना समस्याएं आपको
+                                                    कमजोर नही बल्कि मज़बूत
+                                                    बनाने आती हैं…</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <div class="card-body" id="secondheader">
+                            <div class="row" >
+                                <div class="col-12 d-flex justify-content-center" >
+                                    <button class="btn btn-danger" id="secondheader-remove">Remove</button>
+                                </div>
+                                <div class="col-12 btn" id="secondheaderbtn1"  onclick="showsecondHeader(1)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary ">
+                                        <div class="col-1 d-flex justify-content-start">
+                                            <h4><strong>01</strong></h4>
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="d-flex justify-content-start">Sunday 29 june 2023 <span><strong> संपादकीय</strong></span></h6>
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="d-flex justify-content-end">Channel name</h6>
+                                        </div>
+                                        <div class="col-12 border border-bottom-3 border-black"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn2" onclick="showsecondHeader(2)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary ">
+                                        <div class="col-1 d-flex justify-content-start bg-warning">
+                                            <h4><strong>01</strong></h4>
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="d-flex justify-content-start">Sunday 29 june 2023 <span class="text-warning"><strong> संपादकीय</strong></span></h6>
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="d-flex justify-content-end">Channel name</h6>
+                                        </div>
+                                        <div class="col-12 border border-bottom-3 border-warning"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn3" onclick="showsecondHeader(3)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary " id="purpleNumber">
+                                        <div class="col-11">
+                                            <h6 class="d-flex justify-content-start"><span><strong>संपादकीय&nbsp;</strong></span> Sunday 29 june 2023 </h6>
+                                        </div>
+                                        <div class="col-1 d-flex justify-content-start" >
+                                            <h4><strong>01</strong></h4>
+                                        </div>
+                                        <div class="col-12 "></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn4" onclick="showsecondHeader(4)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary " id="oliveNumber">
+                                        <div class="col-6">
+                                            <h6 class="d-flex justify-content-start"><span><strong>संपादकीय&nbsp;</strong></span>Channel Name </h6>
+                                        </div>
+                                        <div class="col-5 p-0 d-flex justify-content-end" >
+                                            <h6> Sunday 29 june 2023&nbsp;</h6>
+                                        </div>
+                                        <div class="col-1">
+                                            <h5><strong>0&nbsp;1</strong></h5>
+                                        </div>
+                                        <div class="col-12 p-0"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn5" onclick="showsecondHeader(5)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary" >
+                                        <div class="col-12">
+                                            <div class="row border border-3 border-info pb-0 align-items-center">
+                                                <div class="col-6">
+                                                    <h6 class="d-flex justify-content-start"><span class=" text-info "><strong>संपादकीय&nbsp;</strong></span>Channel Name </h6>
+                                                </div>
+                                                <div class="col-6 p-0 d-flex justify-content-end align-items-center" >
+                                                    <h6> Sunday 29 june 2023&nbsp;</h6>
+                                                    <h4 class="bg-info p-2 text-light mb-0"><strong>01</strong></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn6" onclick="showsecondHeader(6)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary" >
+                                        <div class="col-12">
+                                            <div class="row border border-3 border-danger pb-0 align-items-center">
+                                                <div class="col-6">
+                                                    <h6 class="d-flex justify-content-start"><span class=" text-danger "><strong>संपादकीय&nbsp;</strong></span>Channel Name </h6>
+                                                </div>
+                                                <div class="col-6 p-0 d-flex justify-content-end align-items-center" >
+                                                    <h6> Sunday 29 june 2023&nbsp;</h6>
+                                                    <h4 class="bg-danger p-2 text-light mb-0"><strong>01</strong></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn7" onclick="showsecondHeader(7)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary" >
+                                        <div class="col-12">
+                                            <div class="row border border-3 border-danger pb-0 align-items-center">
+                                                <div class="col-8 p-0 d-flex align-items-center" >
+                                                    <h4 class="bg-danger p-2 text-light mb-0"><strong>01</strong></h4>
+                                                    <h6> &nbsp;Sunday 29 june 2023&nbsp; <span class=" text-danger"><strong>संपादकीय&nbsp;</strong></span></h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h6 class="d-flex justify-content-end">Channel Name </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn8" onclick="showsecondHeader(8)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary" >
+                                        <div class="col-12">
+                                            <div class="row border border-3 border-black pb-0 align-items-center">
+                                                <div class="col-8 p-0 d-flex align-items-center" >
+                                                    <h4 class=" p-2 mb-0"><strong>01</strong></h4>
+                                                    <h6> &nbsp;Sunday 29 june 2023&nbsp; <span ><strong>संपादकीय&nbsp;</strong></span></h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h6 class="d-flex justify-content-end">Channel Name </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn9" onclick="showsecondHeader(9)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary ">
+                                        <div class="col-1 d-flex justify-content-start">
+                                            <h4><strong>01</strong></h4>
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="d-flex justify-content-start">Sunday 29 june 2023</h6>
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="d-flex justify-content-end">Channel name</h6>
+                                        </div>
+                                        <div class="col-12 border border-bottom-3 border-black"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn10" onclick="showsecondHeader(10)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary ">
+                                        <div class="col-1 d-flex justify-content-start ">
+                                            <h4 class="bg-dark text-light rounded-circle p-2 mb-0"><strong>01</strong></h4>
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="d-flex justify-content-start">Sunday 29 june 2023</h6>
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="d-flex justify-content-end">Channel name</h6>
+                                        </div>
+                                        <div class="col-12 border border-bottom-3 border-black"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn11" onclick="showsecondHeader(11)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary ">
+                                        <div class="col-12 border border-3 border-danger">
+                                            <div class="row align-items-center">
+                                                <div class="col-3">
+                                                    <h6 class="d-flex justify-content-start">Channel name</h6>
+                                                </div>
+                                                <div class="col-4 d-flex">
+                                                    <span class="text-danger text-end"><strong>संपादकीय</strong></span>
+                                                </div>
+                                                <div class="col-5 d-flex justify-content-end ">
+                                                    <h6 class="mb-0">Sunday 29 june 2023</h6>
+                                                    <h4  class="bg-danger text-light p-1 mb-0 mr-0"><strong>01</strong></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn12" onclick="showsecondHeader(12)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary ">
+                                        <div class="col-12 border border-3 border-danger">
+                                            <div class="row align-items-center p-0">
+                                                <div class="col-4">
+                                                    <h6>Sunday 29 june 2023</h6>
+                                                </div>
+                                                <div class="col-4 d-flex bg-danger justify-content-center py-3">
+                                                    <span class="text-light text-center"><strong>संपादकीय</strong></span>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-end ">
+                                                    <h6 class=" border border-2 border-black rounded p-1 m-1">Channel name</h6>
+                                                    <h4  class="bg-danger text-light p-1 " id="top-number"><strong>01</strong></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn13" onclick="showsecondHeader(13)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary ">
+                                        <div class="col-12 border border-3 border-danger">
+                                            <div class="row align-items-center p-0">
+                                                <div class="col-4">
+                                                    <h6>Sunday 29 june 2023</h6>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-center py-3">
+                                                    <span class="text-center text-danger  border-bottom border-3 border-danger"><strong>संपादकीय</strong></span>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-end ">
+                                                    <h6 class=" border border-2 border-black rounded p-1 m-1">Channel name</h6>
+                                                    <h4  class="bg-danger text-light p-1 " id="top-number"><strong>01</strong></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="secondheaderbtn14" onclick="showsecondHeader(14)">
+                                    <div class="py-2 m-1 border border-3 row align-items-center border-black shadow p-3 mb-5 bg-body-tertiary ">
+                                        <div class="col-12 border-bottom border-5 border-danger">
+                                            <div class="row align-items-center p-0">
+                                                <div class="col-4">
+                                                    <h6>Sunday 29 june 2023</h6>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-center py-3">
+                                                    <span class=" text-danger  text-center"><strong>संपादकीय</strong></span>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-end ">
+                                                    <h6 class=" border border-2 border-black rounded p-1 m-1">Channel name</h6>
+                                                    <h4  class="bg-danger text-light p-1 " id="top-number"><strong>01</strong></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> 
+
+                        <div class="card-body" id="Subheader">
+                            <div class="row" >
+                                <div class="col-12 d-flex justify-content-center" >
+                                    <button class="btn btn-danger" id="subheader-remove">Remove</button>
+                                </div>
+                                <div class="col-12 btn" id="subheaderbtn1" onclick="showsubHeader(1)">
+                                    <div class="py-2 m-1 row align-items-center border-black shadow p-3 mb-3 bg-body-tertiary ">
+                                        <div class="col-6 bg-primary">
+                                            <h6 class="text-start text-light mb-0 py-1">Sunday 29 june 2023</h6>
+                                        </div>
+                                        <div class="col-6 bg-primary">
+                                            <h6 class="text-end text-light mb-0 py-1">वर्ष- १, अंक २0 ,पृष्ठ 0२</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="subheaderbtn2" onclick="showsubHeader(2)">
+                                    <div class="py-0 m-1 border-bottom border-top border-black row align-items-center shadow p-3 mb-3 bg-body-tertiary ">
+                                        <div class="col-3 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1">Sunday 29 june 2023</h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1">वर्ष- १</h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1">अंक २0</h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1">पृष्ठ 0२</h6>
+                                        </div>
+                                        <div class="col-3 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1">abc@gmail.com</h6>
+                                        </div>
+                                        <div class="col-3 px-0">
+                                            <h6 class="mb-0 py-1">wwww.website.com</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="subheaderbtn3" onclick="showsubHeader(3)">
+                                    <div class="py-3 m-1 border-black row align-items-center shadow p-3 mb-3 bg-body-tertiary ">
+                                        <div class="col-3 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1">Sunday 29 june 2023</h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"><i class="bi bi-circle-fill"></i> वर्ष- १</h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"><i class="bi bi-circle-fill"></i> अंक २0</h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"><i class="bi bi-circle-fill"></i> पृष्ठ 0२</h6>
+                                        </div>
+                                        <div class="col-3 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"><i class="bi bi-circle-fill"></i> abc@gmail.com</h6>
+                                        </div>
+                                        <div class="col-3 px-0">
+                                            <h6 class="mb-0 py-1"><i class="bi bi-circle-fill"></i> wwww.website.com</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="subheaderbtn4" onclick="showsubHeader(4)">
+                                    <div class="py-3 m-1 border-black row align-items-center shadow p-3 mb-3 bg-body-tertiary ">
+                                        <div class="col-2 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1">Sunday 29 june 2023</h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"> वर्ष- १</h6>
+                                        </div>
+                                        <div class="col-1 px-0 border-end border-black">
+                                            <h6 class="mb-0 py-1"> अंक २0</h6>
+                                        </div>
+                                        <div class="col-1 px-0 ">
+                                            <h6 class="mb-0 py-1"> पृष्ठ 0२</h6>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-center px-0">
+                                            <h6 class="mb-0 py-1 bg-light">Logo here</h6>
+                                        </div>
+                                        <div class="col-3 px-0">
+                                            <h6 class="mb-0 py-1"> wwww.website.com</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="subheaderbtn5" onclick="showsubHeader(5)">
+                                    <div class="py-3 m-1 border-black row align-items-center shadow p-3 mb-3 bg-body-tertiary  text-light">
+                                        <div class="col-4 d-flex justify-content-start  bg-secondary">
+                                            <h6 class="mb-0 py-1 ">Logo here</h6>
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-end bg-secondary">
+                                            <h6 class="mb-0 py-1">Sunday 29 june 2023</h6>
+                                            <h6 class="mb-0 py-1">वर्ष- १,अंक २0, पृष्ठ 0२</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="subheaderbtn6" onclick="showsubHeader(6)">
+                                    <div class="py-3 m-1 border-black row align-items-center shadow p-3 mb-3 bg-body-tertiary  text-light">
+                                        <div class="col-6 d-flex justify-content-start  bg-secondary">
+                                            <h6 class="mb-0 py-1">Date- Sunday 29 june 2023</h6>
+                                        </div>
+                                        <div class="col-6 d-flex justify-content-end bg-secondary">
+                                            <h6 class="mb-0 py-1">वर्ष- १,अंक २0, पृष्ठ 0२</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="subheaderbtn7" onclick="showsubHeader(7)">
+                                    <div class="py-3 m-1 border border-secondary row align-items-center shadow p-3 mb-3 bg-body-tertiary ">
+                                        <div class="col-4 d-flex justify-content-start  ">
+                                            <h6 class="mb-0 py-1 text-start">Sunday 29 june 2023</h6>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-start  ">
+                                            <h6 class="mb-0 py-1 text-center">RIN:XXXXXXXXXX</h6>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end ">
+                                            <h6 class="mb-0 py-1 text-end">www.website.com</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="subheaderbtn8" onclick="showsubHeader(8)">
+                                    <div class="py-3 m-1 row align-items-center shadow p-3 mb-3 bg-body-tertiary text-light">
+                                        <div class="col-4 d-flex justify-content-start bg-danger ">
+                                            <h6 class="mb-0 py-1 text-start">Sunday 29 june 2023</h6>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-start  bg-danger">
+                                            <h6 class="mb-0 py-1 text-center">RIN:XXXXXXXXXX</h6>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end bg-danger">
+                                            <h6 class="mb-0 py-1 text-end">www.website.com</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> 
+
+                        <div class="card-body" id="headerfooter">
+                            <div class="row" >
+                                <div class="col-12 d-flex justify-content-center" >
+                                    <button class="btn btn-danger" id="headerfooter-remove">Remove</button>
+                                </div>
+                                <div class="col-12 btn" id="subheaderbtn1" onclick="showfooter(1)">
+                                    <div class="py-2 m-1 row align-items-center border-black shadow p-3 mb-3 bg-body-tertiary ">
+                                        <div class="col-2 d-flex px-0 justify-content-end">
+                                            <i class="bi bi-circle-fill" id="bluedot"></i>
+                                            <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                            <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                            <i class="bi bi-circle-fill" ></i>
+                                        </div>
+                                        <div class="col-8 border-bottom border-secondary border-5 px-0"></div>
+                                        <div class="col-2 d-flex px-0">
+                                            <i class="bi bi-circle-fill" id="bluedot"></i>
+                                            <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                            <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                            <i class="bi bi-circle-fill" ></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="subheaderbtn2" onclick="showfooter(2)">
+                                    <div class="py-0 my-1 row align-items-center shadow p-3 mb-3 bg-body-tertiary " >
+                                        <div class="col-12">
+                                            <div class="row my-2" id="yellowbg">
+                                                <div class="col-2 d-flex px-0 ">
+                                                    <i class="bi bi-circle-fill" id="bluedot"></i>
+                                                    <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                                    <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                                    <i class="bi bi-circle-fill" ></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="subheaderbtn3" onclick="showfooter(3)">
+                                    <div class="py-3 m-1 border-black row align-items-center shadow p-3 mb-3 bg-body-tertiary ">
+                                        <div class="col-12 border-black border " id="smallfooterline">
+                                            <p class="mb-0 p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium qui officiis magnam soluta beatae voluptas inventore eaque reiciendis tenetur libero, deserunt veritatis illo provident</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="subheaderbtn4" onclick="showfooter(4)">
+                                    <div class="py-3 m-1 border-black row align-items-center shadow p-3 mb-3 bg-body-tertiary ">
+                                        <div class="col-12">
+                                            <div class="row" id="pinkbg">
+                                                <div class="col-3 d-flex justify-content-start">
+                                                    <i class="bi bi-circle-fill" id="bluedot"></i>
+                                                    <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                                    <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                                    <i class="bi bi-circle-fill" ></i>
+                                                </div>
+                                                <div class="col-3">
+                                                    <i class="bi bi-circle-fill" id="bluedot"></i>
+                                                    <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                                    <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                                    <i class="bi bi-circle-fill" ></i>
+                                                </div>
+                                                <div class="col-3">
+                                                    <i class="bi bi-circle-fill" id="bluedot"></i>
+                                                    <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                                    <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                                    <i class="bi bi-circle-fill" ></i>
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-end">
+                                                    <i class="bi bi-circle-fill" id="bluedot"></i>
+                                                    <i class="bi bi-circle-fill" id="pinkdot"></i>
+                                                    <i class="bi bi-circle-fill" id="yellowdot"></i>
+                                                    <i class="bi bi-circle-fill" ></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="subheaderbtn5" onclick="showfooter(5)">
+                                    <div class="py-3 m-1 border-black row align-items-center shadow p-3 mb-3 bg-body-tertiary">
+                                        <div class="col-12">
+                                            <div class="row" id="pinkbg">
+                                                <div class="col-3 d-flex justify-content-start">
+                                                    <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined">crop_16_9</span>
+                                                </div>
+                                                <div class="col-3">
+                                                    <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined">crop_16_9</span>
+                                                </div>
+                                                <div class="col-3">
+                                                    <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined">crop_16_9</span>
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-end">
+                                                    <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined">crop_16_9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 btn" id="subheaderbtn6" onclick="showfooter(6)">
+                                    <div class="py-3 m-1 border-black row align-items-center shadow p-3 mb-3 bg-body-tertiary">
+                                        <div class="col-12">
+                                            <div class="row" id="pinkbg">
+                                                <div class="col-9 ">
+                                                    <p class="mb-0 text-start">Channel name</p>
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-end">
+                                                    <span class="material-symbols-outlined" id="bluedot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="pinkdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined" id="yellowdot">crop_16_9</span>
+                                                    <span class="material-symbols-outlined">crop_16_9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paper-btns" class="d-flex justify-content-end " >
+        <div id="outer-btn">
+            <div class="row">
+                <div class="col m-2">
+                    <button class="btn btn-warning">
+                        <span class="material-symbols-outlined">
+                            save
+                        </span><br>Save
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m-2">
+                    <button class="btn btn-primary">
+                        <span class="material-symbols-outlined">
+                            upload_file
+                        </span><br>
+                            Export
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m-2">
+                    <a href="index.html">
+                        <button class="btn btn-success">
+                            <span class="material-symbols-outlined">
+                                house
+                            </span><br>
+                                Home
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#headerBtn").click(function(){
+        // Hide other divs
+        $("#secondheader, #Subheader,#headerfooter").hide();
+        $("#header").toggle();
+    });
+    $("#secondheaderBtn").click(function(){
+        // Hide other divs
+        $("#header, #Subheader,#headerfooter").hide();
+        $("#secondheader").toggle();
+    });
+    $("#SubheaderBtn").click(function(){
+        // Hide other divs
+        $("#secondheader, #header,#headerfooter").hide();
+        $("#Subheader").toggle();
+    });
+    $("#headerfooterBtn").click(function(){
+        // Hide other divs
+        $("#header, #Subheader,#secondheader").hide();
+        $("#headerfooter").toggle();
+    });
+
+
+    $("#header-remove").click(function(){
+        // Hide other divs
+        $("#header-paper1,#header-paper2,#header-paper3,#header-paper4,#header-paper5,#header-paper6,#header-paper7,#header-paper8,#header-paper9,#header-paper10,#header-paper11,#header-paper12").hide();
+    });
+    $("#secondheader-remove").click(function(){
+        // Hide other divs
+        $("#secondheader-paper1,#secondheader-paper2,#secondheader-paper3,#secondheader-paper4,#secondheader-paper5,#secondheader-paper6,#secondheader-paper7,#secondheader-paper8,#secondheader-paper9,#secondheader-paper10,#secondheader-paper11,#secondheader-paper12,#secondheader-paper13,#secondheader-paper14").hide();
+    });
+    $("#subheader-remove").click(function(){
+        // Hide other divs
+        $("#subheader-paper1,#subheader-paper2,#subheader-paper3,#subheader-paper4,#subheader-paper5,#subheader-paper6,#subheader-paper7,#subheader-paper8").hide();
+    });
+    $("#headerfooter-remove").click(function(){
+        // Hide other divs
+        $("#headerfooter-paper1,#headerfooter-paper2,#headerfooter-paper3,#headerfooter-paper4,#headerfooter-paper5,#headerfooter-paper6").hide();
+    });
+});
+
+
+function showHeader(index) {
+  for (let i = 1; i <= 12; i++) {
+    let element = document.getElementById('header-paper' + i);
+    if (element) {
+      element.style.display = (i === index) ? 'block' : 'none';
+    }
+  }
+}
+
+function showsecondHeader(index) {
+  for (let i = 1; i <= 14; i++) {
+    let element = document.getElementById('secondheader-paper' + i);
+    if (element) {
+      element.style.display = (i === index) ? 'block' : 'none';
+    }
+  }
+}
+
+function showsubHeader(index) {
+  for (let i = 1; i <= 8; i++) {
+    let element = document.getElementById('subheader-paper' + i);
+    if (element) {
+      element.style.display = (i === index) ? 'block' : 'none';
+    }
+  }
+}
+
+function showfooter(index) {
+  for (let i = 1; i <= 6; i++) {
+    let element = document.getElementById('headerfooter-paper' + i);
+    if (element) {
+      element.style.display = (i === index) ? 'block' : 'none';
+    }
+  }
+}
+
+// photo
+  function previewPhoto(inputId, previewId, labelId) {
+      var input = document.getElementById(inputId);
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          document.getElementById(previewId).src = e.target.result;
+          document.getElementById(labelId).classList.add('hidden');
+        };
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+</script>
+</body>
+</html>
