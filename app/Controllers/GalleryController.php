@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\GalleryModel;
+use App\Models\AdvertisementModel;
 
 class GalleryController extends BaseAdminController
 {
@@ -13,6 +14,7 @@ class GalleryController extends BaseAdminController
         parent::initController($request, $response, $logger);
         checkPermission('gallery');
         $this->galleryModel = new GalleryModel();
+        $this->advertisementModel = new AdvertisementModel();
     }
 
     /**
@@ -332,6 +334,24 @@ class GalleryController extends BaseAdminController
                     echo '<option value="' . $item->id . '">' . esc($item->name) . '</option>';
                 }
             }
+        }
+    }
+
+    public function advertisement(){
+        $data['title'] = trans("gallery_categories");
+        $data['advertisement'] = $this->advertisementModel->getAdvertisements();
+        echo view('admin/includes/_header', $data);
+        echo view('admin/gallery/advertisement', $data);
+        echo view('admin/includes/_footer');
+    }
+    public function updateAdvertisement(){
+         $id = inputPost('id');
+        if ($this->advertisementModel->editAdvertisement($id)) {
+            $this->session->setFlashdata('success', trans('msg_updated'));
+            return redirect()->back();
+        } else {
+            $this->session->setFlashdata('error', trans("msg_error"));
+            return redirect()->back()->withInput();
         }
     }
 

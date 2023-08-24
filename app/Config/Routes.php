@@ -96,6 +96,21 @@ $routes->get($customRoutes->admin . '/scheduled-posts', 'PostController::schedul
 $routes->get($customRoutes->admin . '/drafts', 'PostController::drafts');
 $routes->get($customRoutes->admin . '/bulk-post-upload', 'PostController::bulkPostUpload');
 $routes->get($customRoutes->admin . '/edit-post/(:num)', 'PostController::editPost/$1');
+
+//epaper
+$routes->get($customRoutes->admin . '/epaper-format', 'EpaperController::epaperFormat');
+$routes->post($customRoutes->admin . '/epaper-sub-cat', 'EpaperController::getSubcategory');
+$routes->post($customRoutes->admin . '/epaper-design', 'EpaperController::getDesign');
+$routes->post($customRoutes->admin . '/epaper-single-design', 'EpaperController::getDesignById');
+
+$routes->get($customRoutes->admin . '/epaper-create', 'EpaperController::create');
+$routes->get($customRoutes->admin . '/epaper', 'EpaperController::index');
+$routes->post($customRoutes->admin . '/epaper-save', 'EpaperController::saveEpaper');
+$routes->get($customRoutes->admin . '/epaper-view/(:num)', 'EpaperController::viewEpaper/$1');
+$routes->get($customRoutes->admin . '/epaper-delete/(:num)', 'EpaperController::deleteEpaper/$1');
+$routes->get($customRoutes->admin . '/epaper-pdf/(:num)', 'EpaperController::downloadPdf/$1');
+
+
 //rss feeds
 $routes->get($customRoutes->admin . '/feeds', 'RssController::feeds');
 $routes->get($customRoutes->admin . '/import-feed', 'RssController::importFeed');
@@ -119,6 +134,9 @@ $routes->get($customRoutes->admin . '/edit-gallery-image/(:num)', 'GalleryContro
 $routes->get($customRoutes->admin . '/gallery-albums', 'GalleryController::albums');
 $routes->get($customRoutes->admin . '/edit-gallery-album/(:num)', 'GalleryController::editAlbum/$1');
 $routes->get($customRoutes->admin . '/gallery-categories', 'GalleryController::categories');
+$routes->get($customRoutes->admin . '/gallery-advertisement', 'GalleryController::advertisement');
+$routes->post($customRoutes->admin . '/update-advertisement', 'GalleryController::updateAdvertisement');
+
 $routes->get($customRoutes->admin . '/edit-gallery-category/(:num)', 'GalleryController::editCategory/$1');
 //contact
 $routes->get($customRoutes->admin . '/contact-messages', 'AdminController::contactMessages');

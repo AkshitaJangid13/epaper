@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-sm-12 form-header">
+        <h1 class="form-title form-title-post-format">Choose a Epaper Format</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 post-format-container text-center">
+        <div class="col-xs-3 col-sm-3 col-lg-3 col-add-post">
+        </div>
+        <div class="col-xs-6 col-sm-6 col-lg-6 col-add-post">
+            <a href="<?= adminUrl('epaper-create?type=4'); ?>">
+                <div class="item">
+                    <div class="item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" xml:space="preserve" version="1.1" viewBox="0 0 64 64">
+                            <image width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAACVNJREFUeF7tm2tsFNcVx/9nZr147cVe20D8xEQ0aggJIcQNj4AQEOUDLaraNP1QQb8gGgUEUqQKComoUiRwHk2CQoAWEoFIm7RppSohVAkEAlGgaXDLIy5QMAXb6wcQbLNv786c6s7srGfXu+zsrtcGwf2y65lz7z3nd88999x714Q7vNAdbj/uArjrAXc4gbtTIBsH+HMz271j1A2k8hIQVWXTRqo6LAr4fISlI89Uy8uGsu1kbWXlAe90hhsZtCafygWZQOAvl1fbZuezn6wA7OwIdwz1yCcaqYAQYUBi/sezNbaZ+YKQFYAdHUK1/BYiggLkHUJWAH7vDucdgF2WoDAQiUKolEP4UfEVxGcuA+oLYAMl+l18MBSQdBakrqbCun2Jw5YVgO3DAMBpk7TRNyCIz3FyCD8u7oZGIaa5BQhCWMRWiRZRYe3HZghZAdjWnn8PKCuQYqOfO4SYmafJUTslZwBb2/IPYOyogSmgARDeEJ0OGXuCZr/wAgSpqNaREQAOtM+Dor6oQp1GRMWi8tbrQ7r0J42mNYWy7v7ROJAIYawcwlPadBC2GSOcbDqY4gFwlBx1j1sGwIHLC6DiEwbkgUqMt76tzu8SAGCCQ9amQKLhZk/ICAKzAtm2kAqrP7UOwN96DMAMET/0on9uuZZ/APcVy3FubzbcmAoCzhgphKecyQOjtjIwe8HcBFlaT47xRzJaBdjXGmTwKLPxgsGbw+ABk5wDU8BssLEsmp9VSCH8RIewl5jWwDn+HBEJkbTlpquA4rv0DYEmxwBoDsDYPAweUDOK4LLrEMz5gHlFiMFgwIlwz+KqURVElFGOclMA7Lv8A5X5QxJpuWa73vYbV/M/Bdr9YSysdECNxoFUhpvjRCSifrlyfEFGe4e0eQD7Li1UgZeg8iQiEQwZr1+tSetauQr8tc2DWWMKMb3cjtKCeE+Ig5GwSoSZd66qsVneRaYFkMyQVy4GM3KzbGB80uVHUFiaYSmSqf/TWeXRuJW+clYAXh4GAGc8/WjxhNNbkCAhDDo8u8KyXZYFzf281JJ/DxBjf94ThjsYQShDTzh4X+doGjfZa4VeVgAaL+QfgBXlU8msruyMviIw2A1J2iM5rq4nahjkUlkB2HghkPnkzMWiDOv+SgMgTDN2jRqIjXLxhOcHJUIc6KgHK2+D1RkAHQPZllJRdau26gUu1rOCt5lpDoHtLLIgZjR2538VyNDmOPG1AoC2PzABYG6XnRPqBgPwtx0AsMBIc5mV/VLxvU8KQdV/8QBUWmDkADoAFZu6a3PRL+9118UADGyUGNQpF9cPSmCI/a0egJwGABXskYvqS4SWiu+Sh5ideg4kUhLdAzZ23eIAqsSRpaSDju4UGdIGuXj8+sEe4GvdD6InknqA99J+gLV3h3pk/KGrAM0+GQE1q9CR95EXHdiI8LAzjJ9XRjC3TAGrdFmSsQNF9Y3J9gekxQBV3QEoMwE6Cgovo6KJphhAO95oLZi/q8tu2hIPiy05d1JhV988NLty1c0aSjuUDx3s+iFB+lvO2oxQA0S06OS8sXtTdZ8WwJTPuj4HSXNHSP/cuyUcOjVv3PwcAFzxgKAFwtuyMHtOLbhHC+rJSnoPOHglo6RntM3YOwNehaGmqG3I9TPSbnrMbRpG3MjgbubEdH80MdIyAwUSnYVKq6m4bt+QAni/oQyTRttioMMqcDkQwe7WAD7sCsaev9dQhgdMcr1hFa0BBfu6Q/jAHdCOwozyx4YyTDbJGs+bb0Tws6YeS04ZB8A4QBVJjSwtGlIAJ+eN1RTyRhieCEMcbduiPbxywYt32wLae0MupOoe4pAH1Pi6J4zlp/rQH3UdQzbR0n/2hLHsRG/2APQs8XReAOxu9eO1Fh9KbISdj7jwXacN7qCChceuxwHY0xbAqxe8GqjnJjrx/Xv0bfzmFh/eaRVuOwBrb1cQz5/xWDI4UejEdB18kuuzIDGzjGDbOqi0FMT1QtB8Cjz1qyLLnRqjZQAQFX/5HSeW1DkgpkPD4atJAYiHoyTC32eWo8Iu4Zw3gp9+rbu30ebQAojdFRwlDrRvAPgF/cRbn3y5AnivPYCt//OhrkjGyw+UoNYh47/eCJ5OMMrwAIPw76aWYkaZHQGFMePItTgAnUEFp2+IE0DArzB+e8ELq4FwsAcIACwuTZ8UADoArhpKAIkuI6bzc9/04fNr/Sk9QLzYNc2FR0oL4IswZn0RDyCxzaX/7sXxXmsnRnEAtHsCqQkya/cEAoAb4Oro4A/ygqlfxV2l3XQ6mIOgiOxipFp8Cna3+XHGo4+e2a3NHiDixb6ZFRBL3ukbYSxu0gOc0WZTbxjvu/W5/G2/CvG31XJyWqCcXPVJlwzioLsRzGuMI+/EaZANAHMMSKakYdSf3AFsv+THeIeMFfcW47GyAk18wzkP/tKhL5tDEQNOzR+XMtgTc7MdQdeLgLoEjJpcAJyYN1Y7h9nV6sfrLb6UA2TIJRP4uDuIF854YgmUIftRl/48m3JTAOkanJJBJvjagyV4vNyOlaf7INbpVGXzQ6WY5tJHWxQxXc57I/ioK4RD10Jx1V59sARzK+xY+x8PDlyNf5dOd+P9sAEQHUqElOmvVYUT5XJtMzcAn93emyGZEPjXw54qKp/Yl2wA0maC3zvYfSwEmpHt6I10vcdKFeyYJKYjuUHYg8IbvyaarK/HsS2SScvEzPBwj4xV5wbm60gblGn/W+4PY45LnGfGzgc3kaN2XWoAcZmhEGNsabNhp3tgl5epEiMlv6w2ghW10Z8JGL8TAtrJURs7Hh80BfTMEFX6CbAOQJQvemW82yGj2S/Db+mnByNjtthYTitRsLhSwRyXUHTgbiCqUSc5amPH48kAuAHoAgk/jdEfMVaec42MdRZ73XK/Ee+MTU+cmRvIURs7Hh8MwMgMdQKGA8Q8QTxdcbbUoiojI/aWBiC244t+58sA7URhzSbz8fhgALHMkJcA0cwwdkKjf1l+5tYGsO3R0rSrW8ogaGXMnm3qzeic0EqbQymz7VFXfgH84nifWyLO/w+FsqHCcG9vcFm+u7NMyqzLM8d7GwHk9R8msrFdW+qBxu0NrrVW62cF4OlmtpcH+n7DTEvoFvEEZuog4j3XHaXrP5hMsUwvHYisAKRr9HZ6fxfA7TRa+dD1rgfkg+rt1OYd7wH/B+PdYNf4LmL0AAAAAElFTkSuQmCC" />
+                        </svg>
+                    </div>
+                    <h5 class="title">4 Pages PDF</h5>
+                    <p class="desc">Create 4 page pdf</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-12 post-format-container text-center">
+        <div class="col-xs-3 col-sm-3 col-lg-3 col-add-post">
+        </div>
+        <div class="col-xs-6 col-sm-6 col-lg-6 col-add-post">
+            <a href="<?= adminUrl('epaper-create?type=8'); ?>">
+                <div class="item">
+                    <div class="item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" xml:space="preserve" version="1.1" viewBox="0 0 64 64">
+                            <image width="64" height="64" xlink:href="data:image/png;base64,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" />
+                        </svg>
+                    </div>
+                    <h5 class="title">8 Pages PDF</h5>
+                    <p class="desc">Create 8 page pdf</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>

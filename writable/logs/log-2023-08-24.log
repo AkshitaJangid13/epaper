@@ -1,0 +1,61 @@
+ERROR - 2023-08-24 16:43:25 --> mysqli_sql_exception: Table 'epaper.ci_sessions' doesn't exist in C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\epaper\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\epaper\system\Session\Handlers\DatabaseHandler.php(144): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('nn0kv6gmvidpdlu...')
+#6 C:\xampp\htdocs\epaper\system\Session\Session.php(920): session_start()
+#7 C:\xampp\htdocs\epaper\system\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\epaper\system\Config\Services.php(674): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\epaper\system\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#10 C:\xampp\htdocs\epaper\system\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\epaper\system\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\epaper\system\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\epaper\app\Config\Globals.php(29): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\epaper\app\Config\Globals.php(120): Config\Globals::setGlobals()
+#15 C:\xampp\htdocs\epaper\system\Autoloader\Autoloader.php(312): include_once('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\epaper\system\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\epaper\system\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Globals')
+#18 C:\xampp\htdocs\epaper\app\Config\Routes.php(7): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Globals')
+#19 C:\xampp\htdocs\epaper\system\Router\RouteCollection.php(267): require('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\epaper\system\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+#21 C:\xampp\htdocs\epaper\system\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#22 C:\xampp\htdocs\epaper\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#23 C:\xampp\htdocs\epaper\index.php(77): CodeIgniter\CodeIgniter->run()
+#24 {main}
+CRITICAL - 2023-08-24 16:43:25 --> Table 'epaper.ci_sessions' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data`
+FROM `ci_sessions`
+WHERE `id` = \'vr_session:nn0kv6gmvidpdluo5bkldj03l3774bh1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `ci_sessions`
+WHERE `id` = \'vr_session:nn0kv6gmvidpdluo5bkldj03l3774bh1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `ci_sessions`
+WHERE `id` = \'vr_session:nn0kv6gmvidpdluo5bkldj03l3774bh1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `ci_sessions`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(144): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('nn0kv6gmvidpdluo5bkldj03l3774bh1')
+ 7 SYSTEMPATH\Session\Session.php(920): session_start()
+ 8 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+11 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+14 APPPATH\Config\Globals.php(29): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 APPPATH\Config\Globals.php(120): Config\Globals::setGlobals()
+16 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\xampp\\htdocs\\epaper\\app\\Config\\Globals.php')
+17 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\epaper\\app\\Config\\Globals.php')
+18 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Globals')
+19 APPPATH\Config\Routes.php(7): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Globals')
+20 SYSTEMPATH\Router\RouteCollection.php(267): require('C:\\xampp\\htdocs\\epaper\\app\\Config\\Routes.php')
+21 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+22 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+23 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()

@@ -144,3 +144,79 @@ in SYSTEMPATH\Database\BaseConnection.php on line 427.
 18 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
 19 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 20 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-16 20:07:51 --> Undefined variable $title
+in APPPATH\Views\admin\includes\_header.php on line 6.
+ 1 APPPATH\Views\admin\includes\_header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\epaper\\app\\Views\\admin\\includes\\_header.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\epaper\\app\\Views\\admin\\includes\\_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/includes/_header', [], true)
+ 5 APPPATH\Controllers\EpaperController.php(28): view('admin/includes/_header')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-16 20:08:19 --> Undefined variable $title
+in APPPATH\Views\admin\includes\_header.php on line 6.
+ 1 APPPATH\Views\admin\includes\_header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\epaper\\app\\Views\\admin\\includes\\_header.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\epaper\\app\\Views\\admin\\includes\\_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/includes/_header', [], true)
+ 5 APPPATH\Controllers\EpaperController.php(30): view('admin/includes/_header')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-16 20:08:21 --> Undefined variable $title
+in APPPATH\Views\admin\includes\_header.php on line 6.
+ 1 APPPATH\Views\admin\includes\_header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\epaper\\app\\Views\\admin\\includes\\_header.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\epaper\\app\\Views\\admin\\includes\\_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/includes/_header', [], true)
+ 5 APPPATH\Controllers\EpaperController.php(30): view('admin/includes/_header')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-16 20:08:22 --> Undefined variable $title
+in APPPATH\Views\admin\includes\_header.php on line 6.
+ 1 APPPATH\Views\admin\includes\_header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\epaper\\app\\Views\\admin\\includes\\_header.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\epaper\\app\\Views\\admin\\includes\\_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/includes/_header', [], true)
+ 5 APPPATH\Controllers\EpaperController.php(30): view('admin/includes/_header')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 14:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-07-16 20:09:02 --> Undefined variable $title
+in APPPATH\Views\admin\includes\_header.php on line 6.
+ 1 APPPATH\Views\admin\includes\_header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\epaper\\app\\Views\\admin\\includes\\_header.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\epaper\\app\\Views\\admin\\includes\\_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/includes/_header', [], true)
+ 5 APPPATH\Controllers\EpaperController.php(30): view('admin/includes/_header')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 14:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-07-16 14:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-07-16 20:12:43 --> Invalid file: "admin/epaper/epaper_create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/epaper/epaper_create.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/epaper/epaper_create', [], true)
+ 3 APPPATH\Controllers\EpaperController.php(31): view('admin/epaper/epaper_create')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 14:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-07-16 14:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-07-16 14:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-07-16 14:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-07-16 16:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-07-16 16:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-07-16 16:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-07-16 16:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-07-16 16:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
