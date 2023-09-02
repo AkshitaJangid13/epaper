@@ -11,6 +11,9 @@ require_once APPPATH . "ThirdParty/pdf/vendor/autoload.php";
 
 use Dompdf\Dompdf;
 use Dompdf\Options;
+use Dompdf\FontMetrics;
+use Dompdf\Font;
+use Dompdf\Canvas;
 
 class EpaperController extends BaseAdminController
 {
@@ -104,10 +107,91 @@ class EpaperController extends BaseAdminController
         echo view('admin/includes/_footer');
     }
 
-    public function downloadPdf($id){
-        echo $id; die;
+    public function downloadPdf($id)
+    {
+
+
+        // Output the PDF to the browser or save it to a file
+        // $pdf->Output('hindi_pdf.pdf', 'I');
+
+
+
+        // die;
+
+
+        $viewContent = view('admin/epaper/epaper_pdf');
+        $options = new Options();
+        $options->set('isPhpEnabled', true);
+        $options->set('isRemoteEnabled', true); // Enable remote image loading
+
+        $options->set('defaultFont', 'arivndr-pomt-font'); // Replace with your font name
+        $options->set('fontDir', 'C:/xampp/htdocs/epaper/assets/fonts/');
+
+        $dompdf = new Dompdf($options);
+
+        // Set the font directory
+//         $fontDir = 'C:/xampp/htdocs/epaper/assets/fonts/';
+//         $dompdf->getOptions()->set('fontDir', $fontDir);
+//         // Create a Canvas object
+// $canvas = new Canvas();
+
+// // Create a FontMetrics object with the Canvas object as the first argument
+// $fontMetrics = new FontMetrics($canvas);
+
+//         // Register the font with Dompdf
+//         // $fontMetrics = new FontMetrics();
+//         $font = new Font('arivndr-pomt-font'); // Replace with your font name
+//         $font->saveAdobeFontMetrics($fontMetrics);
+
+//         $dompdf->setFontMetrics($fontMetrics);
+
+        // Load your HTML content into dompdf
+        $dompdf->loadHtml($viewContent);
+
+        // Render the PDF
+        $dompdf->render();
+
+        // Display the PDF content inline
+        $dompdf->stream("dompdf_out.pdf", array("Attachment" => false));
+
+        exit(0);
+
+        $options = new Options();
+        $options->set('isPhpEnabled', true);
+        $options->set('defaultFont', 'Arial Unicode MS');
+        $options->set('fontDir', 'C:/xampp/htdocs/epaper/assets/fonts/');
+
+        $dompdf = new Dompdf($options);
+        $dompdf->getFontMetrics()->registerFont(new \FontMetrics($options->get('fontDir') . 'hind-font'));
+
+        // $dompdf->setBasePath('C:/xampp/htdocs/epaper/assets/fonts/hind-font.css');
+        // Load your HTML content into dompdf
+        $dompdf->loadHtml($viewContent);
+        // Render the PDF
+        $dompdf->render();
+        // Display the PDF content inline
+        $dompdf->stream("dompdf_out.pdf", array("Attachment" => false));
+
+        exit(0);
+
+
+        // $options = new Options();
+        // $options->set('isHtml5ParserEnabled', true);
+        // $options->set('isPhpEnabled', true);
+        // $dompdf = new Dompdf($options);
+        // $dompdf->loadHtml($viewContent);
+        // $dompdf->setPaper('A4', 'portrait');
+        // $dompdf->render();
+
+        // // Send appropriate headers
+        // header('Content-Type: application/pdf'); // Set content type
+        // header('Content-Disposition: attachment; filename="document.pdf"');
+
+        // $dompdf->stream();
+        // echo $viewContent;
+        // die;
     }
-   
+
 
     // public function downloadPdf($id)
     // {

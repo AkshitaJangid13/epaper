@@ -62,7 +62,8 @@
             <div class="justify-content-center">
                 <div class="d-flex  scrollable-row" id="scrollableRow">
                     <button type="button" class="btn btn-danger mx-1" id="content-functions1">Remove Element</button>
-                    <?php foreach ($template as $t) { ?>
+                    <?php
+                    foreach ($template as $t) { ?>
                         <button type="button" class="btn btn-primary mx-1 templateButton" id="content-functions" data-child="0" data-id="<?= $t->id ?>" data-subcategory="<?= $t->is_subcategory ?> "><?= $t->name ?> </button>
                     <?php } ?>
                 </div>
@@ -105,8 +106,8 @@
 <script>
     $(document).ready(function() {
         $("body").delegate(".file-input", "change", function() {
-            var $imageContainer = $(this).closest('.photo-div'); // Find the closest image container
-            var $myImage = $imageContainer.find('.my-image'); // Find the image within that container
+            var $imageContainer = $(this).closest('.photo-div');
+            var $myImage = $imageContainer.find('.my-image');
             var file = this.files[0];
             if (file) {
                 var reader = new FileReader();
@@ -203,7 +204,7 @@
                     $(`#sub-header-paper-${currentpage}`).html(data.description);
                 } else if (data.type_id == 6) {
                     $(`#second-header-paper-${currentpage}`).html(data.description);
-                } else if (data.type_id == 5) {
+                } else if (data.type_id == 4) {
                     $(`#header-paper-${currentpage}`).html(data.description);
                 } else {
                     $(`#layout-paper-${currentpage}`).append(data.description);

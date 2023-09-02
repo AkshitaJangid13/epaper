@@ -1,0 +1,927 @@
+INFO - 2023-08-26 09:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-08-26 15:16:29 --> mysqli_sql_exception: Table 'epaper1.epaper' doesn't exist in C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper`...', 0)
+#1 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper`...')
+#2 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper`...')
+#3 C:\xampp\htdocs\epaper\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper`...', Array, false)
+#4 C:\xampp\htdocs\epaper\app\Models\EpaperModel.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\epaper\app\Controllers\EpaperController.php(37): App\Models\EpaperModel->getEpaperByUserId('44')
+#6 C:\xampp\htdocs\epaper\system\CodeIgniter.php(932): App\Controllers\EpaperController->index()
+#7 C:\xampp\htdocs\epaper\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+#8 C:\xampp\htdocs\epaper\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\epaper\index.php(77): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-26 15:16:29 --> Table 'epaper1.epaper' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper`.*
+FROM `epaper`
+WHERE `userId` = 44', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper`.*
+FROM `epaper`
+WHERE `userId` = 44')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper`.*
+FROM `epaper`
+WHERE `userId` = 44')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper`.*
+FROM `epaper`
+WHERE `userId` = :userId:', [...], false)
+ 5 APPPATH\Models\EpaperModel.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\EpaperController.php(37): App\Models\EpaperModel->getEpaperByUserId('44')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 09:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 09:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 09:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-08-26 15:18:39 --> mysqli_sql_exception: Table 'epaper1.advertisement' doesn't exist in C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `adverti...', 0)
+#1 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `adverti...')
+#2 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `adverti...')
+#3 C:\xampp\htdocs\epaper\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `adverti...', Array, false)
+#4 C:\xampp\htdocs\epaper\app\Models\AdvertisementModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\epaper\app\Controllers\EpaperController.php(57): App\Models\AdvertisementModel->getAdvertisements()
+#6 C:\xampp\htdocs\epaper\system\CodeIgniter.php(932): App\Controllers\EpaperController->create()
+#7 C:\xampp\htdocs\epaper\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+#8 C:\xampp\htdocs\epaper\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\epaper\index.php(77): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-26 15:18:39 --> Table 'epaper1.advertisement' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `advertisement`.*
+FROM `advertisement`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `advertisement`.*
+FROM `advertisement`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `advertisement`.*
+FROM `advertisement`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `advertisement`.*
+FROM `advertisement`', [], false)
+ 5 APPPATH\Models\AdvertisementModel.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\EpaperController.php(57): App\Models\AdvertisementModel->getAdvertisements()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 09:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-08-26 15:20:44 --> mysqli_sql_exception: Table 'epaper1.epaper_template_type' doesn't exist in C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper_...', 0)
+#1 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper_...')
+#2 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper_...')
+#3 C:\xampp\htdocs\epaper\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper_...', Array, false)
+#4 C:\xampp\htdocs\epaper\app\Models\EpaperTemplateModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\epaper\app\Controllers\EpaperController.php(58): App\Models\EpaperTemplateModel->getItems()
+#6 C:\xampp\htdocs\epaper\system\CodeIgniter.php(932): App\Controllers\EpaperController->create()
+#7 C:\xampp\htdocs\epaper\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+#8 C:\xampp\htdocs\epaper\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\epaper\index.php(77): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-26 15:20:44 --> Table 'epaper1.epaper_template_type' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper_template_type`.*, IF( EXISTS(select * from epaper_template_type as f where f.parent_id=epaper_template_type.id), 1, 0) as is_subcategory
+FROM `epaper_template_type`
+WHERE `epaper_template_type`.`parent_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper_template_type`.*, IF( EXISTS(select * from epaper_template_type as f where f.parent_id=epaper_template_type.id), 1, 0) as is_subcategory
+FROM `epaper_template_type`
+WHERE `epaper_template_type`.`parent_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper_template_type`.*, IF( EXISTS(select * from epaper_template_type as f where f.parent_id=epaper_template_type.id), 1, 0) as is_subcategory
+FROM `epaper_template_type`
+WHERE `epaper_template_type`.`parent_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper_template_type`.*, IF( EXISTS(select * from epaper_template_type as f where f.parent_id=epaper_template_type.id), 1, 0) as is_subcategory
+FROM `epaper_template_type`
+WHERE `epaper_template_type`.`parent_id` IS NULL', [], false)
+ 5 APPPATH\Models\EpaperTemplateModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\EpaperController.php(58): App\Models\EpaperTemplateModel->getItems()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 09:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 09:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 09:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 09:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 09:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 09:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 09:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:28:05 --> CSRF token verified.
+INFO - 2023-08-26 09:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 09:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:29:00 --> CSRF token verified.
+INFO - 2023-08-26 09:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:29:01 --> CSRF token verified.
+ERROR - 2023-08-26 15:29:01 --> mysqli_sql_exception: Table 'epaper1.epaper_design' doesn't exist in C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper_...', 0)
+#1 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper_...')
+#2 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper_...')
+#3 C:\xampp\htdocs\epaper\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper_...', Array, false)
+#4 C:\xampp\htdocs\epaper\app\Models\EpaperDesignModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\epaper\app\Controllers\EpaperController.php(75): App\Models\EpaperDesignModel->getDesign('4')
+#6 C:\xampp\htdocs\epaper\system\CodeIgniter.php(932): App\Controllers\EpaperController->getDesign()
+#7 C:\xampp\htdocs\epaper\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+#8 C:\xampp\htdocs\epaper\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\epaper\index.php(77): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-26 15:29:01 --> Table 'epaper1.epaper_design' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = :epaper_design.type_id:', [...], false)
+ 5 APPPATH\Models\EpaperDesignModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\EpaperController.php(75): App\Models\EpaperDesignModel->getDesign('4')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->getDesign()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 09:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:29:02 --> CSRF token verified.
+ERROR - 2023-08-26 15:29:02 --> mysqli_sql_exception: Table 'epaper1.epaper_design' doesn't exist in C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper_...', 0)
+#1 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper_...')
+#2 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper_...')
+#3 C:\xampp\htdocs\epaper\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper_...', Array, false)
+#4 C:\xampp\htdocs\epaper\app\Models\EpaperDesignModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\epaper\app\Controllers\EpaperController.php(75): App\Models\EpaperDesignModel->getDesign('5')
+#6 C:\xampp\htdocs\epaper\system\CodeIgniter.php(932): App\Controllers\EpaperController->getDesign()
+#7 C:\xampp\htdocs\epaper\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+#8 C:\xampp\htdocs\epaper\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\epaper\index.php(77): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-26 15:29:02 --> Table 'epaper1.epaper_design' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = :epaper_design.type_id:', [...], false)
+ 5 APPPATH\Models\EpaperDesignModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\EpaperController.php(75): App\Models\EpaperDesignModel->getDesign('5')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->getDesign()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 09:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:29:02 --> CSRF token verified.
+ERROR - 2023-08-26 15:29:02 --> mysqli_sql_exception: Table 'epaper1.epaper_design' doesn't exist in C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper_...', 0)
+#1 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper_...')
+#2 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper_...')
+#3 C:\xampp\htdocs\epaper\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper_...', Array, false)
+#4 C:\xampp\htdocs\epaper\app\Models\EpaperDesignModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\epaper\app\Controllers\EpaperController.php(75): App\Models\EpaperDesignModel->getDesign('6')
+#6 C:\xampp\htdocs\epaper\system\CodeIgniter.php(932): App\Controllers\EpaperController->getDesign()
+#7 C:\xampp\htdocs\epaper\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+#8 C:\xampp\htdocs\epaper\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\epaper\index.php(77): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-26 15:29:02 --> Table 'epaper1.epaper_design' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = :epaper_design.type_id:', [...], false)
+ 5 APPPATH\Models\EpaperDesignModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\EpaperController.php(75): App\Models\EpaperDesignModel->getDesign('6')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->getDesign()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 09:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:29:02 --> CSRF token verified.
+ERROR - 2023-08-26 15:29:02 --> mysqli_sql_exception: Table 'epaper1.epaper_design' doesn't exist in C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper_...', 0)
+#1 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper_...')
+#2 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper_...')
+#3 C:\xampp\htdocs\epaper\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper_...', Array, false)
+#4 C:\xampp\htdocs\epaper\app\Models\EpaperDesignModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\epaper\app\Controllers\EpaperController.php(75): App\Models\EpaperDesignModel->getDesign('7')
+#6 C:\xampp\htdocs\epaper\system\CodeIgniter.php(932): App\Controllers\EpaperController->getDesign()
+#7 C:\xampp\htdocs\epaper\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+#8 C:\xampp\htdocs\epaper\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\epaper\index.php(77): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-26 15:29:02 --> Table 'epaper1.epaper_design' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'7\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'7\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'7\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = :epaper_design.type_id:', [...], false)
+ 5 APPPATH\Models\EpaperDesignModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\EpaperController.php(75): App\Models\EpaperDesignModel->getDesign('7')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->getDesign()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 09:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:29:03 --> CSRF token verified.
+ERROR - 2023-08-26 15:29:03 --> mysqli_sql_exception: Table 'epaper1.epaper_design' doesn't exist in C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper_...', 0)
+#1 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper_...')
+#2 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper_...')
+#3 C:\xampp\htdocs\epaper\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper_...', Array, false)
+#4 C:\xampp\htdocs\epaper\app\Models\EpaperDesignModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\epaper\app\Controllers\EpaperController.php(75): App\Models\EpaperDesignModel->getDesign('4')
+#6 C:\xampp\htdocs\epaper\system\CodeIgniter.php(932): App\Controllers\EpaperController->getDesign()
+#7 C:\xampp\htdocs\epaper\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+#8 C:\xampp\htdocs\epaper\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\epaper\index.php(77): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-26 15:29:03 --> Table 'epaper1.epaper_design' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper_design`.*
+FROM `epaper_design`
+WHERE `epaper_design`.`type_id` = :epaper_design.type_id:', [...], false)
+ 5 APPPATH\Models\EpaperDesignModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\EpaperController.php(75): App\Models\EpaperDesignModel->getDesign('4')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->getDesign()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 10:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:30:43 --> CSRF token verified.
+INFO - 2023-08-26 10:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:30:44 --> CSRF token verified.
+INFO - 2023-08-26 10:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:30:46 --> CSRF token verified.
+INFO - 2023-08-26 10:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 10:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 10:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:30:51 --> CSRF token verified.
+INFO - 2023-08-26 10:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:30:54 --> CSRF token verified.
+INFO - 2023-08-26 10:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:30:57 --> CSRF token verified.
+INFO - 2023-08-26 10:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:31:01 --> CSRF token verified.
+INFO - 2023-08-26 10:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:31:05 --> CSRF token verified.
+INFO - 2023-08-26 10:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:31:06 --> CSRF token verified.
+INFO - 2023-08-26 10:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:31:10 --> CSRF token verified.
+INFO - 2023-08-26 10:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:31:11 --> CSRF token verified.
+INFO - 2023-08-26 10:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 10:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 10:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:31:12 --> CSRF token verified.
+INFO - 2023-08-26 12:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-08-26 18:28:46 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('admin/epaper-design', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 12:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-08-26 18:28:47 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('admin/epaper-design', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 12:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-08-26 18:28:48 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('admin/epaper-design', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 12:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-08-26 18:28:49 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('admin/epaper-design', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 12:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:28:52 --> CSRF token verified.
+INFO - 2023-08-26 12:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:28:53 --> CSRF token verified.
+INFO - 2023-08-26 12:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 12:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-08-26 18:29:49 --> Undefined variable $baseURL
+in APPPATH\Views\admin\epaper\epaper_create.php on line 17.
+ 1 APPPATH\Views\admin\epaper\epaper_create.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $baseURL', 'C:\\xampp\\htdocs\\epaper\\app\\Views\\admin\\epaper\\epaper_create.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\epaper\\app\\Views\\admin\\epaper\\epaper_create.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/epaper/epaper_create', [], true)
+ 5 APPPATH\Controllers\EpaperController.php(61): view('admin/epaper/epaper_create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 13:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-08-26 18:31:28 --> Undefined variable $baseURL
+in APPPATH\Controllers\EpaperController.php on line 57.
+ 1 APPPATH\Controllers\EpaperController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $baseURL', 'C:\\xampp\\htdocs\\epaper\\app\\Controllers\\EpaperController.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 13:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:33:42 --> CSRF token verified.
+INFO - 2023-08-26 13:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:33:42 --> CSRF token verified.
+INFO - 2023-08-26 13:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:35:04 --> CSRF token verified.
+INFO - 2023-08-26 13:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:35:05 --> CSRF token verified.
+INFO - 2023-08-26 13:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:37:25 --> CSRF token verified.
+INFO - 2023-08-26 13:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:37:26 --> CSRF token verified.
+INFO - 2023-08-26 13:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:38:32 --> CSRF token verified.
+INFO - 2023-08-26 13:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:38:33 --> CSRF token verified.
+INFO - 2023-08-26 13:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:40:02 --> CSRF token verified.
+INFO - 2023-08-26 13:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:40:03 --> CSRF token verified.
+INFO - 2023-08-26 13:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:40:44 --> CSRF token verified.
+INFO - 2023-08-26 13:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:40:45 --> CSRF token verified.
+INFO - 2023-08-26 13:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:47:18 --> CSRF token verified.
+INFO - 2023-08-26 13:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:47:18 --> CSRF token verified.
+INFO - 2023-08-26 13:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:48:23 --> CSRF token verified.
+INFO - 2023-08-26 13:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:48:23 --> CSRF token verified.
+INFO - 2023-08-26 13:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:49:47 --> CSRF token verified.
+INFO - 2023-08-26 13:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:49:48 --> CSRF token verified.
+INFO - 2023-08-26 13:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:53:29 --> CSRF token verified.
+INFO - 2023-08-26 13:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:53:30 --> CSRF token verified.
+INFO - 2023-08-26 13:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:53:59 --> CSRF token verified.
+INFO - 2023-08-26 13:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:53:59 --> CSRF token verified.
+INFO - 2023-08-26 13:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:54:44 --> CSRF token verified.
+INFO - 2023-08-26 13:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:54:45 --> CSRF token verified.
+INFO - 2023-08-26 13:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:54:46 --> CSRF token verified.
+INFO - 2023-08-26 13:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:55:24 --> CSRF token verified.
+INFO - 2023-08-26 13:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:55:24 --> CSRF token verified.
+INFO - 2023-08-26 13:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:55:26 --> CSRF token verified.
+INFO - 2023-08-26 13:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:56:21 --> CSRF token verified.
+INFO - 2023-08-26 13:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:56:22 --> CSRF token verified.
+INFO - 2023-08-26 13:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:58:17 --> CSRF token verified.
+INFO - 2023-08-26 13:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:58:18 --> CSRF token verified.
+INFO - 2023-08-26 13:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:04 --> CSRF token verified.
+INFO - 2023-08-26 13:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:05 --> CSRF token verified.
+INFO - 2023-08-26 13:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:08 --> CSRF token verified.
+INFO - 2023-08-26 13:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:13 --> CSRF token verified.
+INFO - 2023-08-26 13:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:15 --> CSRF token verified.
+INFO - 2023-08-26 13:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:18 --> CSRF token verified.
+INFO - 2023-08-26 13:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:23 --> CSRF token verified.
+INFO - 2023-08-26 13:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:23 --> CSRF token verified.
+INFO - 2023-08-26 13:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:23 --> CSRF token verified.
+INFO - 2023-08-26 13:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:23 --> CSRF token verified.
+INFO - 2023-08-26 13:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:23 --> CSRF token verified.
+INFO - 2023-08-26 13:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:26 --> CSRF token verified.
+INFO - 2023-08-26 13:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:28 --> CSRF token verified.
+INFO - 2023-08-26 13:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:29 --> CSRF token verified.
+INFO - 2023-08-26 13:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:29 --> CSRF token verified.
+INFO - 2023-08-26 13:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:32 --> CSRF token verified.
+INFO - 2023-08-26 13:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:32 --> CSRF token verified.
+INFO - 2023-08-26 13:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:59:32 --> CSRF token verified.
+INFO - 2023-08-26 13:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:03:49 --> CSRF token verified.
+INFO - 2023-08-26 13:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:03:50 --> CSRF token verified.
+INFO - 2023-08-26 13:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:03:51 --> CSRF token verified.
+INFO - 2023-08-26 13:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:04:48 --> CSRF token verified.
+INFO - 2023-08-26 13:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:04:49 --> CSRF token verified.
+INFO - 2023-08-26 13:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:04:50 --> CSRF token verified.
+INFO - 2023-08-26 13:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:05:58 --> CSRF token verified.
+INFO - 2023-08-26 13:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:05:59 --> CSRF token verified.
+INFO - 2023-08-26 13:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:06:00 --> CSRF token verified.
+INFO - 2023-08-26 13:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 13:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:07:08 --> CSRF token verified.
+INFO - 2023-08-26 13:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:07:09 --> CSRF token verified.
+INFO - 2023-08-26 13:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:07:10 --> CSRF token verified.
+INFO - 2023-08-26 14:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:32:56 --> CSRF token verified.
+INFO - 2023-08-26 14:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:32:56 --> CSRF token verified.
+INFO - 2023-08-26 14:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:32:57 --> CSRF token verified.
+INFO - 2023-08-26 14:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:34:12 --> CSRF token verified.
+INFO - 2023-08-26 14:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:34:12 --> CSRF token verified.
+INFO - 2023-08-26 14:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:34:13 --> CSRF token verified.
+INFO - 2023-08-26 14:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:34:21 --> CSRF token verified.
+INFO - 2023-08-26 14:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:34:22 --> CSRF token verified.
+INFO - 2023-08-26 14:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:34:23 --> CSRF token verified.
+INFO - 2023-08-26 14:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:35:14 --> CSRF token verified.
+INFO - 2023-08-26 14:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:35:14 --> CSRF token verified.
+INFO - 2023-08-26 14:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:35:16 --> CSRF token verified.
+INFO - 2023-08-26 14:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:36:41 --> CSRF token verified.
+INFO - 2023-08-26 14:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:36:41 --> CSRF token verified.
+INFO - 2023-08-26 14:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:36:43 --> CSRF token verified.
+INFO - 2023-08-26 14:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:37:49 --> CSRF token verified.
+INFO - 2023-08-26 14:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:37:50 --> CSRF token verified.
+INFO - 2023-08-26 14:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:37:51 --> CSRF token verified.
+INFO - 2023-08-26 14:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:38:17 --> CSRF token verified.
+INFO - 2023-08-26 14:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:38:19 --> CSRF token verified.
+INFO - 2023-08-26 14:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:38:20 --> CSRF token verified.
+INFO - 2023-08-26 14:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:38:55 --> CSRF token verified.
+INFO - 2023-08-26 14:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:38:56 --> CSRF token verified.
+INFO - 2023-08-26 14:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:38:57 --> CSRF token verified.
+INFO - 2023-08-26 14:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:40:22 --> CSRF token verified.
+INFO - 2023-08-26 14:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:40:23 --> CSRF token verified.
+INFO - 2023-08-26 14:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:40:24 --> CSRF token verified.
+INFO - 2023-08-26 14:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:41:54 --> CSRF token verified.
+INFO - 2023-08-26 14:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:41:55 --> CSRF token verified.
+INFO - 2023-08-26 14:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:41:56 --> CSRF token verified.
+INFO - 2023-08-26 14:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:44:06 --> CSRF token verified.
+INFO - 2023-08-26 14:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:44:07 --> CSRF token verified.
+INFO - 2023-08-26 14:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:44:08 --> CSRF token verified.
+INFO - 2023-08-26 14:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:45:13 --> CSRF token verified.
+INFO - 2023-08-26 14:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:45:14 --> CSRF token verified.
+INFO - 2023-08-26 14:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:45:15 --> CSRF token verified.
+INFO - 2023-08-26 14:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:45:35 --> CSRF token verified.
+INFO - 2023-08-26 14:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:45:36 --> CSRF token verified.
+INFO - 2023-08-26 14:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:45:37 --> CSRF token verified.
+INFO - 2023-08-26 14:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:47:10 --> CSRF token verified.
+INFO - 2023-08-26 14:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:47:10 --> CSRF token verified.
+INFO - 2023-08-26 14:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:47:12 --> CSRF token verified.
+INFO - 2023-08-26 14:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:48:00 --> CSRF token verified.
+INFO - 2023-08-26 14:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:48:01 --> CSRF token verified.
+INFO - 2023-08-26 14:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:48:02 --> CSRF token verified.
+INFO - 2023-08-26 14:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:48:14 --> CSRF token verified.
+INFO - 2023-08-26 14:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:48:14 --> CSRF token verified.
+INFO - 2023-08-26 14:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:48:15 --> CSRF token verified.
+INFO - 2023-08-26 14:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:49:07 --> CSRF token verified.
+INFO - 2023-08-26 14:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:49:08 --> CSRF token verified.
+INFO - 2023-08-26 14:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:49:09 --> CSRF token verified.
+INFO - 2023-08-26 14:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:50:02 --> CSRF token verified.
+INFO - 2023-08-26 14:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:50:03 --> CSRF token verified.
+INFO - 2023-08-26 14:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:50:03 --> CSRF token verified.
+INFO - 2023-08-26 14:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:51:32 --> CSRF token verified.
+INFO - 2023-08-26 14:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:52:21 --> CSRF token verified.
+INFO - 2023-08-26 14:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:52:21 --> CSRF token verified.
+INFO - 2023-08-26 14:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:52:22 --> CSRF token verified.
+INFO - 2023-08-26 14:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:52:25 --> CSRF token verified.
+INFO - 2023-08-26 14:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:52:27 --> CSRF token verified.
+INFO - 2023-08-26 14:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 19:55:49 --> CSRF token verified.
+INFO - 2023-08-26 14:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:00:35 --> CSRF token verified.
+INFO - 2023-08-26 14:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:00:36 --> CSRF token verified.
+INFO - 2023-08-26 14:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:00:36 --> CSRF token verified.
+INFO - 2023-08-26 14:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:00:37 --> CSRF token verified.
+INFO - 2023-08-26 14:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:02:39 --> CSRF token verified.
+INFO - 2023-08-26 14:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:02:40 --> CSRF token verified.
+INFO - 2023-08-26 14:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:02:41 --> CSRF token verified.
+INFO - 2023-08-26 14:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:03:39 --> CSRF token verified.
+INFO - 2023-08-26 14:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:03:40 --> CSRF token verified.
+INFO - 2023-08-26 14:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:03:41 --> CSRF token verified.
+INFO - 2023-08-26 14:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:05:39 --> CSRF token verified.
+INFO - 2023-08-26 14:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:07:47 --> CSRF token verified.
+INFO - 2023-08-26 14:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:07:48 --> CSRF token verified.
+INFO - 2023-08-26 14:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:07:49 --> CSRF token verified.
+INFO - 2023-08-26 14:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:10:27 --> CSRF token verified.
+INFO - 2023-08-26 14:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:10:28 --> CSRF token verified.
+INFO - 2023-08-26 14:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:10:31 --> CSRF token verified.
+INFO - 2023-08-26 14:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:11:22 --> CSRF token verified.
+INFO - 2023-08-26 14:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:14:49 --> CSRF token verified.
+INFO - 2023-08-26 14:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:14:50 --> CSRF token verified.
+INFO - 2023-08-26 14:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:14:51 --> CSRF token verified.
+INFO - 2023-08-26 14:45:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:15:56 --> CSRF token verified.
+INFO - 2023-08-26 14:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:15:57 --> CSRF token verified.
+INFO - 2023-08-26 14:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:15:59 --> CSRF token verified.
+INFO - 2023-08-26 14:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:18:06 --> CSRF token verified.
+INFO - 2023-08-26 14:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:18:07 --> CSRF token verified.
+INFO - 2023-08-26 14:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:18:09 --> CSRF token verified.
+INFO - 2023-08-26 14:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:20:19 --> CSRF token verified.
+INFO - 2023-08-26 14:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:20:19 --> CSRF token verified.
+INFO - 2023-08-26 14:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:20:21 --> CSRF token verified.
+INFO - 2023-08-26 14:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:24:00 --> CSRF token verified.
+INFO - 2023-08-26 14:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:24:01 --> CSRF token verified.
+INFO - 2023-08-26 14:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:24:02 --> CSRF token verified.
+INFO - 2023-08-26 14:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 14:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:27:13 --> CSRF token verified.
+INFO - 2023-08-26 14:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:27:15 --> CSRF token verified.
+INFO - 2023-08-26 14:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:27:17 --> CSRF token verified.
+INFO - 2023-08-26 15:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:31:46 --> CSRF token verified.
+INFO - 2023-08-26 15:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:31:47 --> CSRF token verified.
+INFO - 2023-08-26 15:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:31:48 --> CSRF token verified.
+INFO - 2023-08-26 15:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 15:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:35:07 --> CSRF token verified.
+INFO - 2023-08-26 15:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:35:07 --> CSRF token verified.
+INFO - 2023-08-26 15:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 20:35:09 --> CSRF token verified.
+INFO - 2023-08-26 16:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 16:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 21:41:38 --> CSRF token verified.
+INFO - 2023-08-26 16:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 21:41:39 --> CSRF token verified.
+INFO - 2023-08-26 16:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 21:41:41 --> CSRF token verified.
+INFO - 2023-08-26 16:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 16:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:04:01 --> CSRF token verified.
+INFO - 2023-08-26 16:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:04:02 --> CSRF token verified.
+INFO - 2023-08-26 16:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:04:05 --> CSRF token verified.
+INFO - 2023-08-26 16:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 16:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:07:39 --> CSRF token verified.
+INFO - 2023-08-26 16:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:07:40 --> CSRF token verified.
+INFO - 2023-08-26 16:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:07:41 --> CSRF token verified.
+INFO - 2023-08-26 16:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 16:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:09:10 --> CSRF token verified.
+INFO - 2023-08-26 16:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:09:11 --> CSRF token verified.
+INFO - 2023-08-26 16:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:09:13 --> CSRF token verified.
+INFO - 2023-08-26 16:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 16:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:10:03 --> CSRF token verified.
+INFO - 2023-08-26 16:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:10:04 --> CSRF token verified.
+INFO - 2023-08-26 16:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:10:07 --> CSRF token verified.
+INFO - 2023-08-26 16:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 16:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:13:03 --> CSRF token verified.
+INFO - 2023-08-26 16:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:13:04 --> CSRF token verified.
+INFO - 2023-08-26 16:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:13:06 --> CSRF token verified.
+INFO - 2023-08-26 16:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 16:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:15:03 --> CSRF token verified.
+INFO - 2023-08-26 16:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:15:04 --> CSRF token verified.
+INFO - 2023-08-26 16:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:15:05 --> CSRF token verified.
+INFO - 2023-08-26 17:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:34:34 --> CSRF token verified.
+INFO - 2023-08-26 17:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:34:35 --> CSRF token verified.
+INFO - 2023-08-26 17:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:34:37 --> CSRF token verified.
+INFO - 2023-08-26 17:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:41:34 --> CSRF token verified.
+INFO - 2023-08-26 17:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:41:35 --> CSRF token verified.
+INFO - 2023-08-26 17:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:41:37 --> CSRF token verified.
+INFO - 2023-08-26 17:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:48:53 --> CSRF token verified.
+INFO - 2023-08-26 17:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:48:54 --> CSRF token verified.
+INFO - 2023-08-26 17:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:48:55 --> CSRF token verified.
+INFO - 2023-08-26 17:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:59:50 --> CSRF token verified.
+INFO - 2023-08-26 17:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:59:51 --> CSRF token verified.
+INFO - 2023-08-26 17:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 22:59:53 --> CSRF token verified.
+INFO - 2023-08-26 17:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 23:02:26 --> CSRF token verified.
+INFO - 2023-08-26 17:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 23:02:28 --> CSRF token verified.
+INFO - 2023-08-26 17:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 23:02:30 --> CSRF token verified.
+INFO - 2023-08-26 17:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 23:02:46 --> CSRF token verified.
+INFO - 2023-08-26 17:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 23:02:47 --> CSRF token verified.
+INFO - 2023-08-26 17:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 23:02:48 --> CSRF token verified.
+INFO - 2023-08-26 17:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 23:10:46 --> CSRF token verified.
+INFO - 2023-08-26 17:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 23:10:47 --> CSRF token verified.
+INFO - 2023-08-26 17:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 23:10:49 --> CSRF token verified.
+INFO - 2023-08-26 17:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 17:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-08-26 23:28:53 --> Undefined variable $dompdf
+in APPPATH\Controllers\EpaperController.php on line 125.
+ 1 APPPATH\Controllers\EpaperController.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dompdf', 'C:\\xampp\\htdocs\\epaper\\app\\Controllers\\EpaperController.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-26 17:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-08-26 18:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
