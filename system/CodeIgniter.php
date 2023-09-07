@@ -221,7 +221,9 @@ class CodeIgniter
                 $missingExtensions[] = $extension;
             }
         }
-
+        phpinfo();
+        print_r($requiredExtensions);
+        print_r($missingExtensions);
         if ($missingExtensions !== []) {
             throw FrameworkException::forMissingExtension(implode(', ', $missingExtensions));
         }

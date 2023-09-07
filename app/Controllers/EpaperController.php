@@ -7,7 +7,7 @@ use App\Models\EpaperDesignModel;
 use App\Models\AdvertisementModel;
 use App\Models\EpaperModel;
 
-require_once APPPATH . "ThirdParty/pdf/vendor/autoload.php";
+require_once APPPATH . "ThirdParty/vendor/autoload.php";
 
 use Dompdf\Dompdf;
 use Dompdf\Options;
@@ -118,16 +118,33 @@ class EpaperController extends BaseAdminController
 
         // die;
 
-
+        $width = 792; // 1 inch = 72 points
+        $height =1116;
         $viewContent = view('admin/epaper/epaper_pdf');
         $options = new Options();
+        $options->set('isHtml5ParserEnabled', true);
         $options->set('isPhpEnabled', true);
-        $options->set('isRemoteEnabled', true); // Enable remote image loading
+        $options->set('isRemoteEnabled', true);
+        $options->set('debug', true);
 
-        $options->set('defaultFont', 'arivndr-pomt-font'); // Replace with your font name
-        $options->set('fontDir', 'C:/xampp/htdocs/epaper/assets/fonts/');
+        $options->set('defaultPaperSize', [0, 0, $width, $height]); //
+    //     $font = ROOTPATH . "assets/fonts/Noto_Sans/NotoSans-Italic.ttf"; // Replace with the actual font file path
+    //     echo APPPATH;
+    //     echo "<br>";
+    //    echo APPPATH . "ThirdParty/pdf/vendor/autoload.php";
+    //     echo "<br>";
+    //     echo ROOTPATH . "assets/fonts/Noto_Sans/NotoSans-Italic.ttf"; die;
+        // Register the font with Dompdf
+        // $options->set('defaultFont', 'arivndr-pomt-font'); // Replace with your font name
+        // $options->set('fontDir', 'C:/xampp/htdocs/epaper/assets/fonts/');
 
         $dompdf = new Dompdf($options);
+        // $dompdf->setPaper(1116, 792);
+        $dompdf->setPaper([0, 0, $width, $height],'portrait');
+
+
+
+        // $dompdf->getCanvas()->getFontMetrics()->registerFont($font);
 
         // Set the font directory
 //         $fontDir = 'C:/xampp/htdocs/epaper/assets/fonts/';
@@ -159,7 +176,9 @@ class EpaperController extends BaseAdminController
         $options = new Options();
         $options->set('isPhpEnabled', true);
         $options->set('defaultFont', 'Arial Unicode MS');
-        $options->set('fontDir', 'C:/xampp/htdocs/epaper/assets/fonts/');
+       
+
+        // $options->set('fontDir', 'C:/xampp/htdocs/epaper/assets/fonts/');
 
         $dompdf = new Dompdf($options);
         $dompdf->getFontMetrics()->registerFont(new \FontMetrics($options->get('fontDir') . 'hind-font'));

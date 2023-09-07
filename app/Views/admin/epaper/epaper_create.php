@@ -2,25 +2,41 @@
     <div id="containEpaper">
         <?php for ($i = 1; $i <= $type; $i++) { ?>
             <div id="paper-design" class="paper-design-html paper-design-<?= $i ?>">
-                <div id="paper-new" class="paper-design-inner paper-new-<?= $i ?>" style="max-width: 800px;margin: auto; background-color: white;">
-                    <div id="header-footer-paper" style="display: block;">
-                        <div id="header-paper-<?= $i ?>" style="width: 100%; padding: 0px;">
+                <div id="paper-new" class="paper-design-inner paper-new-<?= $i ?>" style="background-color: white;height:1488px;max-width:1056px;">
+                    <div id="main-<?= $i ?>">
+                        <div id="header-footer-paper" style="display: block;">
+                            <div id="header-paper-<?= $i ?>" style="width: 100%; padding: 0px;">
+                            </div>
+                            <div id="second-header-paper-<?= $i ?>" style="width: 100%; padding: 0px;">
+                            </div>
+                            <div id="sub-header-paper-<?= $i ?>" style="width: 100%; padding: 0px;">
+                            </div>
                         </div>
-                        <div id="second-header-paper-<?= $i ?>" style="width: 100%; padding: 0px;">
-                        </div>
-                        <div id="sub-header-paper-<?= $i ?>" style="width: 100%; padding: 0px;">
-                        </div>
-                    </div>
-                    <div id="layout-paper" style="width: 100%; padding: 0px; overflow: hidden; height: 900px;">
-                        <div id="layout-paper-<?= $i ?>">
+                        <?php
+                        if ($i == 1 || ($i == 4 && $type == 4) ||  $i == 8) { ?>
+                            <div id="layout-paper" style="width: 100%; padding: 0px; overflow: hidden;height:50%">
+                                <div id="layout-paper-<?= $i ?>">
+                                </div>
+                            </div>
+                            <div id="addvertisement-paper-<?= $i ?>" style="height:400px;position:sticky;height:40%;">
+                                <?php
+                                $imgBaseURL = getBaseURLByStorage($advertisement[$i - 1]->storage);
+                                ?>
+                                <img src="<?= $imgBaseURL . esc($advertisement[$i - 1]->image); ?>" alt="" class="img-responsive">
+                            </div>
+                        <?php  } else {  ?>
+                            <div id="layout-paper" style="width: 100%; padding: 0px; overflow: hidden;height:90%">
+                                <div id="layout-paper-<?= $i ?>">
 
-                        </div>
-                    </div>
-                    <div id="header-footer-paper-<?= $i ?>" style="position: sticky;top: 960px;">
-                        <div id="headerfooter-paper2" style="width: 100%;">
-                            <div style="width: 100%; background-color: rgb(241, 214, 137)">
-                                <div style="width: 13%; padding-left: 2px;">
-                                    <img src="../uploads/images/assets/img-circle.png" style="width: 50%;" alt="">
+                                </div>
+                            </div>
+                        <?php  }   ?>
+                        <div id="header-footer-paper-<?= $i ?>" style="position: sticky;top: 1400px;">
+                            <div id="headerfooter-paper2" style="width: 100%;">
+                                <div style="width: 100%; background-color: rgb(241, 214, 137)">
+                                    <div style="width: 13%; padding-left: 2px;">
+                                        <img src="https://epapermedia.in/uploads/images/assets/img-circle.png" style="width: 50%;" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>

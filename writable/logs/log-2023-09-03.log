@@ -1,0 +1,738 @@
+INFO - 2023-09-03 07:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 07:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 08:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 08:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 08:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 13:42:56 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 13:43:07 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 13:47:47 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 13:47:50 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 13:48:57 --> Call to undefined method Dompdf\Adapter\GD::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 13:50:16 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 13:50:18 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 13:50:18 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:04:40 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:08:06 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(134): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf', 'Noto Sans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:08:56 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(138): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf', 'Noto Sans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:08:58 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(138): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf', 'Noto Sans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:09:24 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(138): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf', 'Noto Sans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:10:44 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(139): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf', 'Noto Sans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:10:47 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(139): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf', 'Noto Sans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:10:58 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(139): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf', 'NotoSans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:11:06 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(139): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf', 'NotoSans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:11:07 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(139): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf', 'NotoSans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:12:22 --> Class "FontMetrics" not found
+in APPPATH\Controllers\EpaperController.php on line 140.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:12:59 --> Dompdf\FontMetrics::__construct(): Argument #1 ($canvas) must be of type Dompdf\Canvas, string given, called in C:\xampp\htdocs\epaper\app\Controllers\EpaperController.php on line 140
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 71.
+ 1 APPPATH\Controllers\EpaperController.php(140): Dompdf\FontMetrics->__construct('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_SansNotoSans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:13:55 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:14:33 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 134.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:14:42 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 134.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:16:08 --> Call to undefined method Dompdf\FontMetrics::addFont()
+in APPPATH\Controllers\EpaperController.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:17:32 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:17:57 --> Too few arguments to function Dompdf\FontMetrics::registerFont(), 1 passed in C:\xampp\htdocs\epaper\app\Controllers\EpaperController.php on line 128 and at least 2 expected
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 174.
+ 1 APPPATH\Controllers\EpaperController.php(128): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:19:43 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(128): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf', 'Noto Sans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:20:09 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(128): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans', 'Noto Sans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:20:17 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(128): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf', 'Noto Sans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:21:34 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:22:18 --> Call to undefined method Dompdf\Adapter\CPDF::getFontMetrics()
+in APPPATH\Controllers\EpaperController.php on line 128.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:24:56 --> Cannot access offset of type string on string
+in APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php on line 176.
+ 1 APPPATH\Controllers\EpaperController.php(127): Dompdf\FontMetrics->registerFont('C:\\xampp\\htdocs\\epaper\\assets/fonts/Noto_Sans/NotoSans-Italic.ttf', 'Noto Sans')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:28:18 --> Undefined variable $dompdf
+in APPPATH\Controllers\EpaperController.php on line 137.
+ 1 APPPATH\Controllers\EpaperController.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dompdf', 'C:\\xampp\\htdocs\\epaper\\app\\Controllers\\EpaperController.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 08:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:29:29 --> require_once(C:\xampp\htdocs\epaper\app\ThirdParty/pdf/vendor/autoload.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\EpaperController.php on line 10.
+ 1 APPPATH\Controllers\EpaperController.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\epaper\\app\\ThirdParty/pdf/vendor/autoload.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\epaper\\app\\Controllers\\EpaperController.php', 10)
+ 2 APPPATH\Controllers\EpaperController.php(10): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\xampp\\htdocs\\epaper\\app\\Controllers\\EpaperController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\epaper\\app\\Controllers\\EpaperController.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EpaperController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EpaperController')
+ 7 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\EpaperController', true)
+ 8 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 08:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:49:49 --> unpack(): Type n: not enough input, need 2, have 0
+in APPPATH\ThirdParty\vendor\phenx\php-font-lib\src\FontLib\BinaryStream.php on line 196.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unpack(): Type n: not enough input, need 2, have 0', 'C:\\xampp\\htdocs\\epaper\\app\\ThirdParty\\vendor\\phenx\\php-font-lib\\src\\FontLib\\BinaryStream.php', 196)
+ 2 APPPATH\ThirdParty\vendor\phenx\php-font-lib\src\FontLib\BinaryStream.php(196): unpack('nn', '')
+ 3 APPPATH\ThirdParty\vendor\phenx\php-font-lib\src\FontLib\Table\Type\cmap.php(136): FontLib\BinaryStream->readUInt16()
+ 4 APPPATH\ThirdParty\vendor\phenx\php-font-lib\src\FontLib\Table\Table.php(88): FontLib\Table\Type\cmap->_parse()
+ 5 APPPATH\ThirdParty\vendor\phenx\php-font-lib\src\FontLib\TrueType\File.php(318): FontLib\Table\Table->parse()
+ 6 APPPATH\ThirdParty\vendor\phenx\php-font-lib\src\FontLib\TrueType\File.php(121): FontLib\TrueType\File->readTable('cmap')
+ 7 APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php(242): FontLib\TrueType\File->parse()
+ 8 APPPATH\ThirdParty\vendor\dompdf\dompdf\src\Css\Stylesheet.php(1475): Dompdf\FontMetrics->registerFont([...], 'https://epapermedia.in/assets/fonts/KRDEV010.TTF', resource (stream-context))
+ 9 APPPATH\ThirdParty\vendor\dompdf\dompdf\src\Css\Stylesheet.php(1332): Dompdf\Css\Stylesheet->_parse_font_face('font-family: \'Noto Sans\';
+            font-weight: normal;
+            font-style: normal;
+            font-variant: normal;
+            src: url("https://epapermedia.in/assets/fonts/KRDEV010.TTF") format("truetype");
+        ')
+10 APPPATH\ThirdParty\vendor\dompdf\dompdf\src\Css\Stylesheet.php(299): Dompdf\Css\Stylesheet->_parse_css('@font-face {
+            font-family: \'Noto Sans\';
+            font-weight: normal;
+            font-style: normal;
+            font-variant: normal;
+            src: url("https://epapermedia.in/assets/fonts/KRDEV010.TTF") format("truetype");
+        }
+
+        body {
+            font-family: \'Noto Sans\', sans-serif;
+        }
+
+        /* body,
+        html {
+            font-family: \'Noto Sans\', sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-top: 2px;
+            width: 100%;
+            /* Set the width to 100% of the page */
+        /* height: 100%; */
+        /* Set the height to 100% of the page */
+        /* overflow: hidden; */
+        /* }
+
+        #main_section {
+            width: 100%; */
+        /* Ensure content width fits the page */
+        /* overflow: hidden; */
+        /* Hide overflow content */
+        /* } */')
+11 APPPATH\ThirdParty\vendor\dompdf\dompdf\src\Dompdf.php(615): Dompdf\Css\Stylesheet->load_css('
+        @font-face {
+            font-family: \'Noto Sans\';
+            font-weight: normal;
+            font-style: normal;
+            font-variant: normal;
+            src: url("https://epapermedia.in/assets/fonts/KRDEV010.TTF") format("truetype");
+        }
+
+        body {
+            font-family: \'Noto Sans\', sans-serif;
+        }
+
+        /* body,
+        html {
+            font-family: \'Noto Sans\', sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-top: 2px;
+            width: 100%;
+            /* Set the width to 100% of the page */
+        /* height: 100%; */
+        /* Set the height to 100% of the page */
+        /* overflow: hidden; */
+        /* }
+
+        #main_section {
+            width: 100%; */
+        /* Ensure content width fits the page */
+        /* overflow: hidden; */
+        /* Hide overflow content */
+        /* } */
+    ', 3)
+12 APPPATH\ThirdParty\vendor\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+13 APPPATH\Controllers\EpaperController.php(167): Dompdf\Dompdf->render()
+14 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+15 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+16 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 09:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-09-03 14:50:06 --> unpack(): Type n: not enough input, need 2, have 0
+in APPPATH\ThirdParty\vendor\phenx\php-font-lib\src\FontLib\BinaryStream.php on line 196.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unpack(): Type n: not enough input, need 2, have 0', 'C:\\xampp\\htdocs\\epaper\\app\\ThirdParty\\vendor\\phenx\\php-font-lib\\src\\FontLib\\BinaryStream.php', 196)
+ 2 APPPATH\ThirdParty\vendor\phenx\php-font-lib\src\FontLib\BinaryStream.php(196): unpack('nn', '')
+ 3 APPPATH\ThirdParty\vendor\phenx\php-font-lib\src\FontLib\Table\Type\cmap.php(136): FontLib\BinaryStream->readUInt16()
+ 4 APPPATH\ThirdParty\vendor\phenx\php-font-lib\src\FontLib\Table\Table.php(88): FontLib\Table\Type\cmap->_parse()
+ 5 APPPATH\ThirdParty\vendor\phenx\php-font-lib\src\FontLib\TrueType\File.php(318): FontLib\Table\Table->parse()
+ 6 APPPATH\ThirdParty\vendor\phenx\php-font-lib\src\FontLib\TrueType\File.php(121): FontLib\TrueType\File->readTable('cmap')
+ 7 APPPATH\ThirdParty\vendor\dompdf\dompdf\src\FontMetrics.php(242): FontLib\TrueType\File->parse()
+ 8 APPPATH\ThirdParty\vendor\dompdf\dompdf\src\Css\Stylesheet.php(1475): Dompdf\FontMetrics->registerFont([...], 'https://epapermedia.in/assets/fonts/KRDEV010.TTF', resource (stream-context))
+ 9 APPPATH\ThirdParty\vendor\dompdf\dompdf\src\Css\Stylesheet.php(1332): Dompdf\Css\Stylesheet->_parse_font_face('font-family: \'Noto Sans\';
+            font-weight: normal;
+            font-style: normal;
+            font-variant: normal;
+            src: url("https://epapermedia.in/assets/fonts/KRDEV010.TTF") format("truetype");
+        ')
+10 APPPATH\ThirdParty\vendor\dompdf\dompdf\src\Css\Stylesheet.php(299): Dompdf\Css\Stylesheet->_parse_css('@font-face {
+            font-family: \'Noto Sans\';
+            font-weight: normal;
+            font-style: normal;
+            font-variant: normal;
+            src: url("https://epapermedia.in/assets/fonts/KRDEV010.TTF") format("truetype");
+        }
+
+        body {
+            font-family: \'Noto Sans\', sans-serif;
+        }
+
+        /* body,
+        html {
+            font-family: \'Noto Sans\', sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-top: 2px;
+            width: 100%;
+            /* Set the width to 100% of the page */
+        /* height: 100%; */
+        /* Set the height to 100% of the page */
+        /* overflow: hidden; */
+        /* }
+
+        #main_section {
+            width: 100%; */
+        /* Ensure content width fits the page */
+        /* overflow: hidden; */
+        /* Hide overflow content */
+        /* } */')
+11 APPPATH\ThirdParty\vendor\dompdf\dompdf\src\Dompdf.php(615): Dompdf\Css\Stylesheet->load_css('
+        @font-face {
+            font-family: \'Noto Sans\';
+            font-weight: normal;
+            font-style: normal;
+            font-variant: normal;
+            src: url("https://epapermedia.in/assets/fonts/KRDEV010.TTF") format("truetype");
+        }
+
+        body {
+            font-family: \'Noto Sans\', sans-serif;
+        }
+
+        /* body,
+        html {
+            font-family: \'Noto Sans\', sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-top: 2px;
+            width: 100%;
+            /* Set the width to 100% of the page */
+        /* height: 100%; */
+        /* Set the height to 100% of the page */
+        /* overflow: hidden; */
+        /* }
+
+        #main_section {
+            width: 100%; */
+        /* Ensure content width fits the page */
+        /* overflow: hidden; */
+        /* Hide overflow content */
+        /* } */
+    ', 3)
+12 APPPATH\ThirdParty\vendor\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+13 APPPATH\Controllers\EpaperController.php(167): Dompdf\Dompdf->render()
+14 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->downloadPdf('10')
+15 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+16 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 09:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 09:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:52:03 --> CSRF token verified.
+INFO - 2023-09-03 10:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:52:05 --> CSRF token verified.
+INFO - 2023-09-03 10:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:52:05 --> CSRF token verified.
+INFO - 2023-09-03 10:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:52:06 --> CSRF token verified.
+INFO - 2023-09-03 10:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:52:08 --> CSRF token verified.
+INFO - 2023-09-03 10:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:52:36 --> CSRF token verified.
+INFO - 2023-09-03 10:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:52:36 --> CSRF token verified.
+INFO - 2023-09-03 10:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:52:38 --> CSRF token verified.
+INFO - 2023-09-03 10:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:52:41 --> CSRF token verified.
+INFO - 2023-09-03 10:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:55:54 --> CSRF token verified.
+INFO - 2023-09-03 10:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:55:55 --> CSRF token verified.
+INFO - 2023-09-03 10:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:56:00 --> CSRF token verified.
+INFO - 2023-09-03 10:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 15:56:04 --> CSRF token verified.
+INFO - 2023-09-03 10:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:06:39 --> CSRF token verified.
+INFO - 2023-09-03 10:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:06:39 --> CSRF token verified.
+INFO - 2023-09-03 10:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:06:41 --> CSRF token verified.
+INFO - 2023-09-03 10:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 10:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-09-03 16:22:09 --> mysqli_sql_exception: Table 'epaper.epaper' doesn't exist in C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epaper\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper`...', 0)
+#1 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper`...')
+#2 C:\xampp\htdocs\epaper\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper`...')
+#3 C:\xampp\htdocs\epaper\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper`...', Array, false)
+#4 C:\xampp\htdocs\epaper\app\Models\EpaperModel.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\epaper\app\Controllers\EpaperController.php(37): App\Models\EpaperModel->getEpaperByUserId('1')
+#6 C:\xampp\htdocs\epaper\system\CodeIgniter.php(932): App\Controllers\EpaperController->index()
+#7 C:\xampp\htdocs\epaper\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+#8 C:\xampp\htdocs\epaper\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\epaper\index.php(77): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-03 16:22:09 --> Table 'epaper.epaper' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `epaper`.*
+FROM `epaper`
+WHERE `userId` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `epaper`.*
+FROM `epaper`
+WHERE `userId` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `epaper`.*
+FROM `epaper`
+WHERE `userId` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `epaper`.*
+FROM `epaper`
+WHERE `userId` = :userId:', [...], false)
+ 5 APPPATH\Models\EpaperModel.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\EpaperController.php(37): App\Models\EpaperModel->getEpaperByUserId('1')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EpaperController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpaperController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-03 11:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:32:15 --> CSRF token verified.
+INFO - 2023-09-03 11:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:32:16 --> CSRF token verified.
+INFO - 2023-09-03 11:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:37:29 --> CSRF token verified.
+INFO - 2023-09-03 11:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:37:30 --> CSRF token verified.
+INFO - 2023-09-03 11:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:49:01 --> CSRF token verified.
+INFO - 2023-09-03 11:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:49:02 --> CSRF token verified.
+INFO - 2023-09-03 11:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:57:42 --> CSRF token verified.
+INFO - 2023-09-03 11:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:57:43 --> CSRF token verified.
+INFO - 2023-09-03 11:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:58:47 --> CSRF token verified.
+INFO - 2023-09-03 11:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:58:49 --> CSRF token verified.
+INFO - 2023-09-03 11:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:58:49 --> CSRF token verified.
+INFO - 2023-09-03 11:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:02:05 --> CSRF token verified.
+INFO - 2023-09-03 11:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:02:07 --> CSRF token verified.
+INFO - 2023-09-03 11:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:06:07 --> CSRF token verified.
+INFO - 2023-09-03 11:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:06:08 --> CSRF token verified.
+INFO - 2023-09-03 11:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:06:20 --> CSRF token verified.
+INFO - 2023-09-03 11:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:10:54 --> CSRF token verified.
+INFO - 2023-09-03 11:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:10:56 --> CSRF token verified.
+INFO - 2023-09-03 11:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:10:57 --> CSRF token verified.
+INFO - 2023-09-03 11:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:10:58 --> CSRF token verified.
+INFO - 2023-09-03 11:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:12:16 --> CSRF token verified.
+INFO - 2023-09-03 11:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:12:18 --> CSRF token verified.
+INFO - 2023-09-03 11:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:12:18 --> CSRF token verified.
+INFO - 2023-09-03 11:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:12:19 --> CSRF token verified.
+INFO - 2023-09-03 11:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:13:02 --> CSRF token verified.
+INFO - 2023-09-03 11:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:13:02 --> CSRF token verified.
+INFO - 2023-09-03 11:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:13:03 --> CSRF token verified.
+INFO - 2023-09-03 11:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 11:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:27:48 --> CSRF token verified.
+INFO - 2023-09-03 11:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:27:49 --> CSRF token verified.
+INFO - 2023-09-03 11:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:27:50 --> CSRF token verified.
+INFO - 2023-09-03 11:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:27:51 --> CSRF token verified.
+INFO - 2023-09-03 11:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:27:51 --> CSRF token verified.
+INFO - 2023-09-03 11:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:27:52 --> CSRF token verified.
+INFO - 2023-09-03 11:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:27:52 --> CSRF token verified.
+INFO - 2023-09-03 11:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:27:52 --> CSRF token verified.
+INFO - 2023-09-03 11:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 12:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:03:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 21:48:22 --> CSRF token verified.
+INFO - 2023-09-03 16:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 21:48:24 --> CSRF token verified.
+INFO - 2023-09-03 16:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 16:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-09-03 17:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
