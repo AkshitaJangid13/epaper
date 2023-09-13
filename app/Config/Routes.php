@@ -109,6 +109,7 @@ $routes->post($customRoutes->admin . '/epaper-save', 'EpaperController::saveEpap
 $routes->get($customRoutes->admin . '/epaper-view/(:num)', 'EpaperController::viewEpaper/$1');
 $routes->get($customRoutes->admin . '/epaper-delete/(:num)', 'EpaperController::deleteEpaper/$1');
 $routes->get($customRoutes->admin . '/epaper-pdf/(:num)', 'EpaperController::downloadPdf/$1');
+$routes->post($customRoutes->admin . '/save-image', 'EpaperController::saveImage');
 
 
 //rss feeds
